@@ -14,13 +14,8 @@ handlers:
   static_dir: static_files/js
 
 - url: /.*
-<<<<<<< HEAD
   script: main.app
 
-=======
-  script: main.app 
-    
->>>>>>> 5456a0bd151fb60ef13e5b62cd8fd4685d9aaa90
 libraries:
 - name: jinja2
   version: latest
