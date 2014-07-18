@@ -8,10 +8,10 @@ jinja_environment = jinja2.Environment(loader=
 class PoemHandler(webapp2.RequestHandler):
   def get(self):
     template_values = {}
-    template = jinja_environment.get_template('poem_home.html')
+    template = jinja_environment.get_template('poems/betterpoem_home.html')
     self.response.out.write(template.render(template_values))
   
 routes = [
-  ('/poem', PoemHandler),
+  ('/', PoemHandler),
 ]
 app = webapp2.WSGIApplication(routes, debug=True)
