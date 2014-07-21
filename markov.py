@@ -1,7 +1,7 @@
 #! /usr/bin/python
 
 from collections import Counter, defaultdict
-from random import randrange, randint
+from random import randrange, choice
 import re
 
 ###
@@ -40,7 +40,7 @@ def ngramsFromCorpus(corpus, n):
 # dictToPartialSums :: countDict -> wordcountTuples
 def dictToPartialSums(d):
   '''eg: {'crawled': 3, 'cried': 4, 'sat':2} 
-  -> [('crawled', 3), ('cried', 4), ('sat',2)]'''
+  -> [('crawled', 3), ('cried', 7), ('sat',9)]'''
   lst = []
   partialSum = 0
   for k, v in d.iteritems():
@@ -62,10 +62,22 @@ def nestedDictToTuples(d):
 def sampleNgrams(wordcountTuples):
   rand = randrange(wordcountTuples[-1][1])
   for i in range(len(wordcountTuples)): 
-    if rand <= wordcountTuples[i][1]:
+    if rand < wordcountTuples[i][1]:
       chosenWord = wordcountTuples[i][0]
       break
   return chosenWord
+
+# test sampling of sampleNgrams
+# def testProbs(n, wordcountTuples):
+#   counts = []
+#   for i in xrange(len(wordcountTuples)):
+#     counts += [0]
+#   for i in xrange(n):
+#     w = sampleNgrams(wordcountTuples)
+#     for i in xrange(len(wordcountTuples)):
+#       if w == wordcountTuples[i][0]:
+#         counts[i] += 1
+#   return counts
 
 
 ### if there's no n-gram match during synthesis you try fewer-grams
@@ -78,6 +90,37 @@ def sampleNgrams(wordcountTuples):
 #   randIndex = randrange(len(unigrams['']))
 #   firstWord =  unigrams[''][randIndex][0]
 ###
+
+# ngrams :: {String : wordcountTuples} 
+# -> firstNgram :: String
+# -> line :: String
+def markov(ngrams, lineLength):
+  ## note: underweights ngrams with lots of instances for first word
+  firstNgram = choice(ngrams.items()) # :: (wordn-1, [(wordn, count)])
+  firstStr = firstNgram[0] + " " + choice(firstNgram[1])[0] # :: "wordn-1 wordn"
+  chain = firstStr.split(' ') # :: [wordn-1, wordn]
+
+  n = len(chain)
+  for i in xrange(lineLength-n):
+    priorWords = ' '.join(chain[-n+1:]) # take last n-1 words to end of chain
+    chain += [ngrams[priorWords][0][0]]
+
+  return chain
+
+
+# TODOs:
+# <s> </s> tags for reasonable starts and ends
+## turn periods into </s>, <s>
+## chain starts with n-1 <s>'s, then can select from ngrams: 
+  ### start tags:
+  ### {'ANYTHING <s>...':[('blah',3), (blah2, 4)]} -- as long as has <s> as last word in key 
+  ### "alice went to bed. the next morning" -> {"bed </s> <s>" : [(next, 4)]}
+  ### end tags:
+  ### "alice went to bed" {"went to bed" : [(</s>:10, "today":1)]} -> choose </s>
+  ### if select next word that is an </s>, add period and start new sentence with "wordsn-1 </s> <s>""
+# default to smaller ngrams if no ngrams exist for that n
+## weight different ngrams (2,3,4) -- learn weights?
+# rhyming
 
 """
 just choose a single n
@@ -101,16 +144,13 @@ def main():
   corpus = wordsFromCorpus('alice_in_wonderland.txt')
   
   trigrams = ngramsFromCorpus(corpus,3)
-
   d = nestedDictToTuples(trigrams)
 
-  chooseFirstWords()
+  chain = markov(d, 20)
 
+  line = ' '.join(chain)
 
-  print "Nested dict of tuples: "
-  print unigrams
-  print word
-
+  print line
 
 if __name__ == '__main__':
   main()
