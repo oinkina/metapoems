@@ -12,10 +12,10 @@
     <title>Metapoets</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="generate.css" rel="stylesheet">
+    <link href="stylesheets/generate.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -26,13 +26,13 @@
       
       
       <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+      <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
       
-      <script>
-      $(document).ready (function () {
-          $("#accordion").accordion();
-      });
-      </script>
+       <script>
+            $(function() {
+                $("#accordion" ).accordion();
+            });
+        </script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -42,59 +42,72 @@
   </head>
 
   <body>
+      <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '{your-app-id}',
+          xfbml      : true,
+          version    : 'v2.0'
+        });
+      };
 
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+      
       
     <div class="container-fluid">
         <div class="row">
             <div class="header">
-                <div class="col-md-3"> </div>
-                <div class="col-md-1"> </div>
-                <div class="col-md-6">
+                <div class="col-md-2"> </div>
+                <div class="col-md-8">
                     <ul class="nav nav-pills nav-justified">
                       <li class="active"><a href="#">Generate</a></li>
                       <li><a href="#">Library</a></li>
                     </ul>
-                <div class="col-md-1"> </div>
+                <div class="col-md-2"> </div>
               </div>
             </div>
         </div>
         
         <div class="row">
-            <div class="col-md-3"> 
-      
-              <div class="sidebar"> 
-                  <p>This is a sidebar</p>
-              </div>
-                
-            </div>
-            <div class="col-md-1"> </div>
-            <div class="col-md-6">
+            <div class="col-md-2"> </div>
+            <div class="col-md-8">
                 <div class="middle" id="accordion">
-
-                <div class="choose"> <h3> Choose a poet or author </h3>
-                    <img class="authorpic" src="authorPictures/Andreyev_by_Repin_1905.jpg">
-                    <img class="authorpic" src="authorPictures/Edgar_Allen_Poe_1898.jpg">
-                    <img class="authorpic" src="authorPictures/eliot_main_lg.jpg">
-                    <img class="authorpic" src="authorPictures/fyodor-dostoevsky_6-t.jpg">
-                    <img class="authorpic" src="authorPictures/Hemingway.gif">
-                    <img class="authorpic" src="authorPictures/langston-hughes-1.jpg">
-                    <img class="authorpic" src="authorPictures/maya_angelou.jpg">
-                    <img class="authorpic" src="authorPictures/Rimbaud.png">
-                    <img class="authorpic" src="authorPictures/Shakespeare_Droeshout_1623.jpg">
-                    <img class="authorpic" src="authorPictures/silversteinshel_custom-d9a683da694bd0e0372729064b7ab15881ed646b-s6-c30.jpg">
-                    <img class="authorpic" src="authorPictures/Ted_HeadshotBIG.jpg">
-                    <img class="authorpic" src="authorPictures/Vladimir-Nabokov.jpg">
-                    <img class="authorpic" src="authorPictures/walt-whitman.jpg">
-                    <img class="authorpic" src="authorPictures/youngfrost.jpg">
-                    <img class="authorpic" src="authorPictures/e-e-cummings-1.jpg">
                     
+                    <h3> Choose a poet or author </h3>
+                        <div class="choose"> 
+                            <img class="authorpic" src="img/Andreyev_by_Repin_1905.jpg">
+                            <img class="authorpic" src="img/Edgar_Allen_Poe_1898.jpg">
+                            <img class="authorpic" src="img/eliot_main_lg.jpg">
+                            <img class="authorpic" src="img/fyodor-dostoevsky_6-t.jpg">
+                            <img class="authorpic" src="img/Hemingway.gif">
+        <!--
+                            <img class="authorpic" src="img/authorPictures/langston-hughes-1.jpg">
+                            <img class="authorpic" src="img/maya_angelou.jpg">
+                            <img class="authorpic" src="img/authorPictures/Rimbaud.png">
+                            <img class="authorpic" src="img/Shakespeare_Droeshout_1623.jpg">
+                            <img class="authorpic" src="img/authorPictures/silversteinshel_custom-d9a683da694bd0e0372729064b7ab15881ed646b-s6-c30.jpg">
+                            <img class="authorpic" src="img/Ted_HeadshotBIG.jpg">
+                            <img class="authorpic" src="img/Vladimir-Nabokov.jpg">
+                            <img class="authorpic" src="img/walt-whitman.jpg">
+                            <img class="authorpic" src="img/youngfrost.jpg">
+                            <img class="authorpic" src="img/e-e-cummings-1.jpg">
                     
-                    
-                    
+-->
                     </div>
-                <div class="generate"><h3>Generate</h3><form> Generate a poem <button type="submit"> Generate </button></form></div>
-                <div class="poem">
+                    
+                    <h3>Generate</h3>
+                <div class="generate">
+                    <form> Generate a poem <button type="submit"> Generate </button></form></div>
+                    
                     <h3>Poem</h3>
+                <div class="poem">
                   <h4 id="poemtitle">Her lips are copper wire</h4>
                     <div class="backdrop">
                       <p>
@@ -115,16 +128,27 @@
                         and press your lips to mine <br>
                         till they are incandescent <br>
                         </p>
+                        <div
+                          class="fb-like"
+                          data-send="true"
+                          data-width="450"
+                          data-show-faces="true">
+                        </div>
                     </div>
                 </div>
-                <div class="metadata"> Metadata</div>
+                    
+                    <h3>Metadata</h3>
+                <div class="metadata">
+                    
+                </div>
                     
                     </div>
                 
             </div>
-            <div class="col-md-1"> </div>
+            <div class="col-md-2"> </div>
             
         </div>
+<!--
         <div class="row">
              <div class="footer">
                 <div class="col-md-12">
@@ -132,6 +156,7 @@
                 </div>
             </div>
     </div>
+-->
      
     </div> <!-- /container -->
 

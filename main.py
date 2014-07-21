@@ -30,7 +30,7 @@ class PoemHandler(webapp2.RequestHandler):
     template_values = {
       'title' : 'Poem'
     }
-    template = jinja_environment.get_template('poems/betterpoem_home.html')
+    template = jinja_environment.get_template('poems/generate.html')
     self.response.out.write(template.render(template_values))
 
  
