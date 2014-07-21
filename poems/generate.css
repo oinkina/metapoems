@@ -1,0 +1,54 @@
+.header {
+    min-height: 200px;
+    border: solid;
+}
+
+
+.generate {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: auto;
+    padding-right: auto;
+    border: solid;
+    text-align: center;
+}
+
+.sidebar {
+    height: 70px;
+    padding: 100px;
+    margin-left: 5px;
+    margin-top: 100px;
+    border: solid;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav {
+    margin-top: 150px;
+}
+
+.middle{
+    border-left: solid;
+    border-right: solid;
+}
+
+.poem {
+    background-image: url("https://www.flickr.com/photos/rcameraw/14623507454/in/photolist-oheihS-onmH7o-o6EEGA-opcias-o7rALw-nZfhSN-ookZgw-o7sUGi-o74ZST-ooByZb-o73YE5-o6EwXj-o7CccK-onKBVF-o6yaA3-om4K49-o6RdS6-o7xLq7-o74Zgn-on1Mi9-oo8gFx-ongCrG-oocqxm-o7MENB-onZfFn-o7LwDz-oonjKR-o7JA3c-omjFB5-o7LvuF-ooS9DX-o7JEZ5-omdgiG-op9cWX-ooNP9d-ooTpno-o5g5TA-oraq1e-odvAhH-oo2E9R-o6XoRc-o7U5Uc-o7jf3w-oaXe5t-ooYpWj-oh8noM-or9iDZ-o7weV3-o7weX7-ogyuts");
+}
+
+.pre {
+    width: 50%;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    border: solid;
+    width: 100%;
+}
+    
