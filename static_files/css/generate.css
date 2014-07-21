@@ -1,13 +1,6 @@
 .header {
     min-height: 200px;
-    border: solid;
-}
-.sidebar {
-    height: 70px;
-    padding: 100px;
-    margin-left: 5px;
-    margin-top: 100px;
-    border: solid;
+    border-bottom: solid;
 }
 
 h4 {
@@ -19,9 +12,7 @@ h4 {
     margin-top: 150px;
 }
 
-.middle{
-    border-left: solid;
-    border-right: solid;
+.middle {
     margin-bottom: 20px;
     text-align: center;
 }

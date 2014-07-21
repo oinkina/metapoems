@@ -33,9 +33,18 @@ class PoemHandler(webapp2.RequestHandler):
     template = jinja_environment.get_template('poems/generate.html')
     self.response.out.write(template.render(template_values))
 
+
+class MakePoemHandler(webapp2.RequestHandler):
+  def get(self):
+    template_values = {
+    }
+    template = jinja_environment.get_template('poems/untitled.html')
+    self.response.out.write(template.render(template_values))
+
  
 routes = [
   ('/', HomeHandler),
   ('/poem', PoemHandler),
+  ('/make', MakePoemHandler),
 ]
 app = webapp2.WSGIApplication(routes, debug=True)
