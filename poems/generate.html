@@ -23,6 +23,16 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+      
+      
+      <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+      
+      <script>
+      $(document).ready (function () {
+          $("#accordion").accordion();
+      });
+      </script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -59,40 +69,68 @@
             </div>
             <div class="col-md-1"> </div>
             <div class="col-md-6">
+                <div class="middle" id="accordion">
 
-                <div class="choose"> </div>
-                <div class="generate"><form> <button type="submit"> Generate </button></form></div>
+                <div class="choose"> <h3> Choose a poet or author </h3>
+                    <img class="authorpic" src="authorPictures/Andreyev_by_Repin_1905.jpg">
+                    <img class="authorpic" src="authorPictures/Edgar_Allen_Poe_1898.jpg">
+                    <img class="authorpic" src="authorPictures/eliot_main_lg.jpg">
+                    <img class="authorpic" src="authorPictures/fyodor-dostoevsky_6-t.jpg">
+                    <img class="authorpic" src="authorPictures/Hemingway.gif">
+                    <img class="authorpic" src="authorPictures/langston-hughes-1.jpg">
+                    <img class="authorpic" src="authorPictures/maya_angelou.jpg">
+                    <img class="authorpic" src="authorPictures/Rimbaud.png">
+                    <img class="authorpic" src="authorPictures/Shakespeare_Droeshout_1623.jpg">
+                    <img class="authorpic" src="authorPictures/silversteinshel_custom-d9a683da694bd0e0372729064b7ab15881ed646b-s6-c30.jpg">
+                    <img class="authorpic" src="authorPictures/Ted_HeadshotBIG.jpg">
+                    <img class="authorpic" src="authorPictures/Vladimir-Nabokov.jpg">
+                    <img class="authorpic" src="authorPictures/walt-whitman.jpg">
+                    <img class="authorpic" src="authorPictures/youngfrost.jpg">
+                    <img class="authorpic" src="authorPictures/e-e-cummings-1.jpg">
+                    
+                    
+                    
+                    
+                    </div>
+                <div class="generate"><h3>Generate</h3><form> Generate a poem <button type="submit"> Generate </button></form></div>
                 <div class="poem">
-                  <h4>Her lips are copper wire</h4>
-                  <pre>
-                    whisper of yellow globes
-                    gleaming on lamp-posts that sway
-                    like bootleg licker drinkers in the fog
+                    <h3>Poem</h3>
+                  <h4 id="poemtitle">Her lips are copper wire</h4>
+                    <div class="backdrop">
+                      <p>
+                        whisper of yellow globes <br>
+                        gleaming on lamp-posts that sway <br>
+                        like bootleg licker drinkers in the fog <br>
 
-                    and let your breath be moist against me
-                    like bright beads on yellow globes
+                        and let your breath be moist against me <br>
+                        like bright beads on yellow globes <br>
 
-                    telephone the power-house
-                    that the main wires are insulate
+                        telephone the power-house <br>
+                        that the main wires are insulate <br>
 
-                    (her words play softly up and down
-                    dewy corridors of billboards)
+                        (her words play softly up and down <br>
+                        dewy corridors of billboards) <br>
 
-                    then with your tongue remove the tape
-                    and press your lips to mine
-                    till they are incandescent 
-                    </pre>
+                        then with your tongue remove the tape <br>
+                        and press your lips to mine <br>
+                        till they are incandescent <br>
+                        </p>
+                    </div>
                 </div>
+                <div class="metadata"> Metadata</div>
+                    
+                    </div>
                 
             </div>
             <div class="col-md-1"> </div>
             
         </div>
         <div class="row">
-             <div class="col-md-12"> </div>
-        <div class="footer">
-          <p>Contact us</p>
-      </div>
+             <div class="footer">
+                <div class="col-md-12">
+                  <p>Contact us</p>
+                </div>
+            </div>
     </div>
      
     </div> <!-- /container -->
