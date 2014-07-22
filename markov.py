@@ -18,8 +18,8 @@ import re
 
 ### Tests of Probability Samplings ###
 
-# test sampling of sampleNgrams
-def testProbs(n, wordcountTuples):
+# test sampling of wordcountTuples
+def testSampleNgrams(n, wordcountTuples):
   # initialize counts
   counts = []
   for i in xrange(len(wordcountTuples)):
@@ -31,8 +31,10 @@ def testProbs(n, wordcountTuples):
         counts[i] += 1
   return counts
 
-# test sample
-def testProbs(n, probabilities):
+# testSample :: 
+# (test times :: Int), (probabilities | sum to 1 :: [Float])
+#   -> (counts in n trials :: [Int])
+def testSample(n, probabilities):
 
   # initialize counts
   counts = []
@@ -115,7 +117,8 @@ def sampleNgrams(wordcountTuples):
   return chosenWord
 
 
-# sample :: (probabilities | sum to 1 :: [Float]) -> (counts in n trials :: [Int])
+# sample :: (probabilities | sum to 1 :: [Float])
+# -> (index of probability selected :: Int) 
 def sample(probabilities):
   totals = [sum(probabilities[:i+1]) for i in range(len(probabilities))]
   n = uniform(0, totals[-1])
@@ -132,11 +135,11 @@ def sample(probabilities):
 ## QUESTION: should totalNgrams be a list??
 # bigrams, trigrams
 # -> ngrams :: {2: bigrams, 3: trigrams}
-def mixNgrams(*ngrams):
-  totalNgrams = {}
-  for i in range(len(ngrams)):
-    totalNgrams[i+2] = ngrams[i]
-  return totalNgrams
+# def mixNgrams(*ngrams):
+#   totalNgrams = {}
+#   for i in range(len(ngrams)):
+#     totalNgrams[i+2] = ngrams[i]
+#   return totalNgrams
 
 # pick 2, 3, etc. with some weightings; then sample ngrams from within that
 def mixMarkov(*ngrams):
@@ -146,7 +149,7 @@ def mixMarkov(*ngrams):
     totalNgrams[i+2] = ngrams[i]
 
   # pick n with some weightings
-
+  sample
 
   # call markov
 
