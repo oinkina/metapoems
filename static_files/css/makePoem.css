@@ -2,20 +2,16 @@
     text-align: center;
     font-size: 80px;
     margin-top: 20px;
-    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'EB Garamond', serif;
 }
 
 #subtitle {
     text-align: center;
     font-size: 30px;
-    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'EB Garamond', serif;
 }
 
-#authorimg {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
     
 .apic {
     width: 150px;
@@ -56,6 +52,24 @@
 
 .fb-login-button {
     width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#fb {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#authorimg {
+    width: 80%;
+    height: 180px;
+    white-space: nowrap;
+    overflow: auto;
     margin-right: auto;
     margin-left: auto;
 }
