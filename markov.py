@@ -75,15 +75,18 @@ def wordsFromCorpus(f):
   # make lower, only keep actual words, no puncutation
   return re.split("[^\w']+", text.lower())
 
-# corpus, n -> nestedDict
-def ngramsFromCorpus(corpus, n):
+# (corpus :: [Words]), maxN -> (nestedDict :: {bigrams, trigrams, ...})
+def ngramsFromCorpus(corpus, maxN):
   # if nothing yet on the first level, makes new defaultdict (default value 0)
   nestedDict = defaultdict(lambda: defaultdict(int)) # int() === lambda: 0
-  for i in range(len(corpus)-n+1):
-    indexNextWord = i + n - 1 #for n == 1, returns [] 
-    searchWords = ' '.join(corpus[i : indexNextWord])
-    nextWord = corpus[indexNextWord]
-    nestedDict[searchWords][nextWord]+=1
+  # for bigrams, trigrams, etc through maxN-grams
+  for n in range(2, maxN + 1):
+    # for all words in corpus, count++ in nestedDict[wordsn-1] = {wordn: count} 
+    for i in range(len(corpus)-n+1):
+      indexNextWord = i + n - 1 #for n == 1, returns [] 
+      searchWords = ' '.join(corpus[i : indexNextWord])
+      nextWord = corpus[indexNextWord]
+      nestedDict[searchWords][nextWord] += 1
   return nestedDict
 
 # dictToPartialSums :: countDict -> wordcountTuples
@@ -116,7 +119,6 @@ def sampleNgrams(wordcountTuples):
       break
   return chosenWord
 
-
 # sample :: (probabilities | sum to 1 :: [Float])
 # -> (index of probability selected :: Int) 
 def sample(probabilities):
@@ -126,44 +128,24 @@ def sample(probabilities):
       if n <= total:
           return i
 
-# {cat: [(ate, 3), (sat, 5)], dog: [(ran,4),(jumped, 5)]}
-# {my cat: [(ate, 3), (sat, 5)], his dog: [(ran,2),(jumped, 7)]}
-# -> {2: {cat: [(ate, 3), (sat, 5)], dog: [(ran,4),(jumped, 5)]},
-#     3: {my cat: [(ate, 3), (sat, 5)], his dog: [(ran,2),(jumped, 7)]}}
-
-# pass in however many, but start with bigrams and go in order
-## QUESTION: should totalNgrams be a list??
-# bigrams, trigrams
-# -> ngrams :: {2: bigrams, 3: trigrams}
-# def mixNgrams(*ngrams):
-#   totalNgrams = {}
-#   for i in range(len(ngrams)):
-#     totalNgrams[i+2] = ngrams[i]
-#   return totalNgrams
-
-# pick 2, 3, etc. with some weightings; then sample ngrams from within that
-def mixMarkov(*ngrams):
-  # bigrams, trigrams -> totalNgrams :: {2: bigrams, 3: trigrams} 
-  totalNgrams = {}
-  for i in range(len(ngrams)):
-    totalNgrams[i+2] = ngrams[i]
-
-  # pick n with some weightings
-  sample
-
-  # call markov
-
-# ngrams :: {String : wordcountTuples} 
+# note: probabilities are in order for bigrams, trigrams, etc.; sum to 1; len == (maxN - 1)
+# (ngrams :: {String : wordcountTuples}), (lineLength :: Int), 
+# (n_probabilities :: [P(n-gram) :: Float])
 # -> firstNgram :: String
 # -> line :: String
-def markov(ngrams, lineLength):
+def markov(ngrams, lineLength, n_probabilities=[0.5,0.5]):
   ## note: underweights ngrams with lots of instances for first word
+
+  ## note: when it chooses firstNgram, it chooses whether to do bigrams or trigrams
+  #### because n = len(chain) which is based on firstNgram
+  ###### TODO: choose n as input to markov
+
   firstNgram = choice(ngrams.items()) # :: (wordn-1, [(wordn, count)])
   firstStr = firstNgram[0] + " " + choice(firstNgram[1])[0] # :: "wordn-1 wordn"
   chain = firstStr.split(' ') # :: [wordn-1, wordn]
 
-  n = len(chain)
-  for i in xrange(lineLength-n):
+  for i in xrange(lineLength-len(chain)):
+    n = sample(n_probabilities)+2 #### TODO: DOES THIS WORK??? TYPES AND SHIT
     priorWords = ' '.join(chain[-n+1:]) # take last n-1 words to end of chain
     chain += [sampleNgrams(ngrams[priorWords])] # ngrams[priorWords] :: wordcountTuples
 
@@ -187,15 +169,11 @@ def main():
 
   corpus = wordsFromCorpus('alice_in_wonderland.txt')
   
-  bigrams   = nestedDictToTuples(ngramsFromCorpus(corpus,2))
-  trigrams  = nestedDictToTuples(ngramsFromCorpus(corpus,3))
-  quadgrams = nestedDictToTuples(ngramsFromCorpus(corpus,4))
+  ngrams = nestedDictToTuples(ngramsFromCorpus(corpus, 3))
 
-  chain = markov(trigrams, 20)
+  chain = markov(ngrams, 1000, [0.3,0.7])
   line = ' '.join(chain)
   print line
-
-  ngrams = mixNgrams(bigrams,trigrams,quadgrams)
 
 if __name__ == '__main__':
   main()
