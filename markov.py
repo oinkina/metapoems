@@ -1,10 +1,55 @@
 #! /usr/bin/python
 
 from collections import Counter, defaultdict
-from random import randrange, choice
+from random import randrange, choice, uniform
 import re
 
+### if there's no n-gram match during synthesis you try fewer-grams
+# # corpus, n 
+# # -> unigrams :: nestedDict 
+# # -> unigramTuples :: {String : wordcountTuples}
+# # -> word
+# def chooseFirstWords(corpus,n):
+#   unigrams = nestedDictToTuples(ngramsFromCorpus(corpus,1))
+#   randIndex = randrange(len(unigrams['']))
+#   firstWord =  unigrams[''][randIndex][0]
 ###
+
+
+### Tests of Probability Samplings ###
+
+# test sampling of sampleNgrams
+def testProbs(n, wordcountTuples):
+  # initialize counts
+  counts = []
+  for i in xrange(len(wordcountTuples)):
+    counts += [0]
+  for i in xrange(n):
+    w = sampleNgrams(wordcountTuples)
+    for i in xrange(len(wordcountTuples)):
+      if w == wordcountTuples[i][0]:
+        counts[i] += 1
+  return counts
+
+# test sample
+def testProbs(n, probabilities):
+
+  # initialize counts
+  counts = []
+  for i in xrange(len(probabilities)):
+    counts += [0]
+
+  for i in xrange(n):
+    choice = sample(probabilities)
+    counts[choice] += 1
+
+  return counts
+
+#####
+
+
+### TYPES ###
+
 # count :: Int
 # word, wordn :: String
 # corpus :: [String]
@@ -12,7 +57,9 @@ import re
 # countDict :: {wordn : count , wordn : count , wordn : count},...}
 # wordcountTuples :: [(wordn, count)]
 # nestedDict :: {wordsn-1 : countDict}
-###
+
+#####
+
 
 
 ### Write to nestedDict ###
@@ -67,29 +114,41 @@ def sampleNgrams(wordcountTuples):
       break
   return chosenWord
 
-# test sampling of sampleNgrams
-# def testProbs(n, wordcountTuples):
-#   counts = []
-#   for i in xrange(len(wordcountTuples)):
-#     counts += [0]
-#   for i in xrange(n):
-#     w = sampleNgrams(wordcountTuples)
-#     for i in xrange(len(wordcountTuples)):
-#       if w == wordcountTuples[i][0]:
-#         counts[i] += 1
-#   return counts
+
+# sample :: (probabilities | sum to 1 :: [Float]) -> (counts in n trials :: [Int])
+def sample(probabilities):
+  totals = [sum(probabilities[:i+1]) for i in range(len(probabilities))]
+  n = uniform(0, totals[-1])
+  for i, total in enumerate(totals):
+      if n <= total:
+          return i
+
+# {cat: [(ate, 3), (sat, 5)], dog: [(ran,4),(jumped, 5)]}
+# {my cat: [(ate, 3), (sat, 5)], his dog: [(ran,2),(jumped, 7)]}
+# -> {2: {cat: [(ate, 3), (sat, 5)], dog: [(ran,4),(jumped, 5)]},
+#     3: {my cat: [(ate, 3), (sat, 5)], his dog: [(ran,2),(jumped, 7)]}}
+
+# pass in however many, but start with bigrams and go in order
+## QUESTION: should totalNgrams be a list??
+# bigrams, trigrams
+# -> ngrams :: {2: bigrams, 3: trigrams}
+def mixNgrams(*ngrams):
+  totalNgrams = {}
+  for i in range(len(ngrams)):
+    totalNgrams[i+2] = ngrams[i]
+  return totalNgrams
+
+# pick 2, 3, etc. with some weightings; then sample ngrams from within that
+def mixMarkov(*ngrams):
+  # bigrams, trigrams -> totalNgrams :: {2: bigrams, 3: trigrams} 
+  totalNgrams = {}
+  for i in range(len(ngrams)):
+    totalNgrams[i+2] = ngrams[i]
+
+  # pick n with some weightings
 
 
-### if there's no n-gram match during synthesis you try fewer-grams
-# # corpus, n 
-# # -> unigrams :: nestedDict 
-# # -> unigramTuples :: {String : wordcountTuples}
-# # -> word
-# def chooseFirstWords(corpus,n):
-#   unigrams = nestedDictToTuples(ngramsFromCorpus(corpus,1))
-#   randIndex = randrange(len(unigrams['']))
-#   firstWord =  unigrams[''][randIndex][0]
-###
+  # call markov
 
 # ngrams :: {String : wordcountTuples} 
 # -> firstNgram :: String
@@ -103,10 +162,9 @@ def markov(ngrams, lineLength):
   n = len(chain)
   for i in xrange(lineLength-n):
     priorWords = ' '.join(chain[-n+1:]) # take last n-1 words to end of chain
-    chain += [ngrams[priorWords][0][0]]
+    chain += [sampleNgrams(ngrams[priorWords])] # ngrams[priorWords] :: wordcountTuples
 
   return chain
-
 
 # TODOs:
 # <s> </s> tags for reasonable starts and ends
@@ -122,35 +180,19 @@ def markov(ngrams, lineLength):
 ## weight different ngrams (2,3,4) -- learn weights?
 # rhyming
 
-"""
-just choose a single n
-and then choose a random one to start
-then from the current generatedtext
-take last n-1 words
-to search in dict of tuples for next one
-then you have to generate random number
-and find match in partial sums list
-"""
-
-""" 
-you look to see if you have some ngrams with the same first n-1 
-words as the previous n-1 words in your output
-like if the output so far is "This is an", 
-and you're doing 3-grams, you'd look for examples of "is an ___"
-"""
-
 def main():
 
   corpus = wordsFromCorpus('alice_in_wonderland.txt')
   
-  trigrams = ngramsFromCorpus(corpus,3)
-  d = nestedDictToTuples(trigrams)
+  bigrams   = nestedDictToTuples(ngramsFromCorpus(corpus,2))
+  trigrams  = nestedDictToTuples(ngramsFromCorpus(corpus,3))
+  quadgrams = nestedDictToTuples(ngramsFromCorpus(corpus,4))
 
-  chain = markov(d, 20)
-
+  chain = markov(trigrams, 20)
   line = ' '.join(chain)
-
   print line
+
+  ngrams = mixNgrams(bigrams,trigrams,quadgrams)
 
 if __name__ == '__main__':
   main()

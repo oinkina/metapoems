@@ -37,5 +37,7 @@ class DictProperty(db.Property):
   def empty(self, value):
     return value is None
 
-class Dict(db.Model):
-   dic = DictProperty(required=True)
+class LanguageModel(db.Model):
+   bigram   = DictProperty(required=True)
+   trigram  = DictProperty(required=True)
+   quadgram = DictProperty(required=True)
