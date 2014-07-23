@@ -1,8 +1,10 @@
 from datastore import Ngram
+from markov import printPoem
 
 import jinja2 
 import os
 import webapp2
+
 
 
 jinja_environment = jinja2.Environment(loader=
@@ -25,20 +27,22 @@ class HomeHandler(webapp2.RequestHandler):
     template = jinja_environment.get_template('home.html')
     self.response.out.write(template.render(template_values))
 
+class MakePoemHandler(webapp2.RequestHandler):
+  def get(self):
+    file = self.request.get('file')
+
+    template_values = {
+    }
+    template = jinja_environment.get_template('poems/makePoem.html')
+    self.response.out.write(template.render(template_values))
+
+
 class PoemHandler(webapp2.RequestHandler):
   def get(self):
     template_values = {
       'title' : 'Poem'
     }
-    template = jinja_environment.get_template('poems/generate.html')
-    self.response.out.write(template.render(template_values))
-
-
-class MakePoemHandler(webapp2.RequestHandler):
-  def get(self):
-    template_values = {
-    }
-    template = jinja_environment.get_template('poems/makePoem.html')
+    template = jinja_environment.get_template('poems/generatedpoem.html')
     self.response.out.write(template.render(template_values))
 
  

@@ -165,15 +165,29 @@ def markov(ngrams, lineLength, n_probabilities=[0.5,0.5]):
 ## weight different ngrams (2,3,4) -- learn weights?
 # rhyming
 
+
+def printPoem(corpus):
+    corp = wordsFromCorpus(corpus)
+    ngrams = nestedDictToTuples(ngramsFromCorpus(corp, 3))
+
+    chain = markov(ngrams, 1000, [0.3,0.7])
+    line = ' '.join(chain)
+    print line
+
 def main():
+  printPoem('alice_in_wonderland.txt')
 
-  corpus = wordsFromCorpus('alice_in_wonderland.txt')
-  
-  ngrams = nestedDictToTuples(ngramsFromCorpus(corpus, 3))
+# def main():
 
-  chain = markov(ngrams, 1000, [0.3,0.7])
-  line = ' '.join(chain)
-  print line
+#   corpus = wordsFromCorpus('alice_in_wonderland.txt')
 
-if __name__ == '__main__':
-  main()
+#   ngrams = nestedDictToTuples(ngramsFromCorpus(corpus, 3))
+
+#   chain = markov(ngrams, 1000, [0.3,0.7])
+#   line = ' '.join(chain)
+#   print line
+
+# if __name__ == '__main__':
+#   main()
+
+
