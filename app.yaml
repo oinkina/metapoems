@@ -16,6 +16,8 @@ handlers:
   static_dir: static_files/authorPictures
 - url: /corpus
   static_dir: static_files/corpus
+- url: /fonts
+  static_dir: static_files/fonts  
 
 - url: /.*
   script: main.app
