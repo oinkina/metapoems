@@ -1,0 +1,16 @@
+{% include "header.html" %}
+
+<div class = "container">
+  <h1>Ngram Database</h1>
+
+  <table>
+  {% for ngram in ngrams %}
+    <tr>
+      <td>word:  {{ ngram.word }}</td>
+      <td>count: {{ ngram.count }}</td>
+    </tr>
+  {% endfor %}
+  </table>
+</div>
+
+{% include "footer.html" %}

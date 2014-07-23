@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-  <head>
-    <title>{{ title }}</title>
-    <link href="stylesheets/generatedpoem.css" rel="stylesheet">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/flickr.js"></script>
-  </head>
-  
+{% include "header.html" %}
+
+<link href="stylesheets/generatedpoem.css" rel="stylesheet">
   <body>
 <!--    <div class="metapoets">
       <h2>METApoetry</h2>
@@ -39,6 +34,8 @@
         <p> {{ poem }} beep </p>
     </div>
 <!--    <div class="bottombar"> METApoetry! Make your own<a href="http://metapoems.appspot.com">here</a>
-    </div> -->      
-  </body>
-</html>
+    </div> -->   
+
+    <script type="text/javascript" src="js/flickr.js"></script>
+
+{% include "footer.html" %}

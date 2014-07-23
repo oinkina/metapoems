@@ -23,16 +23,13 @@ class NgramHandler(webapp2.RequestHandler):
       'ngrams' : ngrams
     }
 
-    template = jinja_environment.get_template('home.html')
+    template = jinja_environment.get_template('ngram.html')
     self.response.out.write(template.render(template_values))
 
 class MakePoemHandler(webapp2.RequestHandler):
   def get(self):
     
-
-    template_values = {
-    
-    }
+    template_values = {}
 
     template = jinja_environment.get_template('poems/makePoem.html')
 
@@ -51,10 +48,10 @@ class PoemHandler(webapp2.RequestHandler):
     except Exception as e:
       self.response.out.write(str(e))
 
-
     template_values = {
       'poem' : ona
     }
+
     template = jinja_environment.get_template('poems/generatedpoem.html')
 
     self.response.out.write(template.render(template_values))
@@ -70,4 +67,5 @@ routes = [
   ('/poem', PoemHandler),
   ('/ngram', NgramHandler),
 ]
+
 app = webapp2.WSGIApplication(routes, debug=True)
