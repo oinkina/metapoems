@@ -33,7 +33,14 @@ class MakePoemHandler(webapp2.RequestHandler):
 
     template_values = {
     }
+<<<<<<< HEAD
     template = jinja_environment.get_template('poems/makePoem.html')
+=======
+<<<<<<< HEAD
+    template = jinja_environment.get_template('generate.html')
+=======
+    template = jinja_environment.get_template('poems/generate.html')
+>>>>>>> FETCH_HEAD
     self.response.out.write(template.render(template_values))
 
 
@@ -42,7 +49,12 @@ class PoemHandler(webapp2.RequestHandler):
     template_values = {
       'title' : 'Poem'
     }
+<<<<<<< HEAD
     template = jinja_environment.get_template('poems/generatedpoem.html')
+=======
+    template = jinja_environment.get_template('poems/makePoem.html')
+>>>>>>> FETCH_HEAD
+>>>>>>> FETCH_HEAD
     self.response.out.write(template.render(template_values))
 
  

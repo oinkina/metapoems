@@ -135,17 +135,12 @@ def sample(probabilities):
 # -> line :: String
 def markov(ngrams, lineLength, n_probabilities=[0.5,0.5]):
   ## note: underweights ngrams with lots of instances for first word
-
-  ## note: when it chooses firstNgram, it chooses whether to do bigrams or trigrams
-  #### because n = len(chain) which is based on firstNgram
-  ###### TODO: choose n as input to markov
-
   firstNgram = choice(ngrams.items()) # :: (wordn-1, [(wordn, count)])
   firstStr = firstNgram[0] + " " + choice(firstNgram[1])[0] # :: "wordn-1 wordn"
   chain = firstStr.split(' ') # :: [wordn-1, wordn]
 
   for i in xrange(lineLength-len(chain)):
-    n = sample(n_probabilities)+2 #### TODO: DOES THIS WORK??? TYPES AND SHIT
+    n = sample(n_probabilities)+2 
     priorWords = ' '.join(chain[-n+1:]) # take last n-1 words to end of chain
     chain += [sampleNgrams(ngrams[priorWords])] # ngrams[priorWords] :: wordcountTuples
 
@@ -161,7 +156,8 @@ def markov(ngrams, lineLength, n_probabilities=[0.5,0.5]):
   ### end tags:
   ### "alice went to bed" {"went to bed" : [(</s>:10, "today":1)]} -> choose </s>
   ### if select next word that is an </s>, add period and start new sentence with "wordsn-1 </s> <s>""
-# default to smaller ngrams if no ngrams exist for that n
+# TODO!!: default to smaller ngrams if no ngrams exist for that n; 
+  # choose random next word if nothing for bigrams
 ## weight different ngrams (2,3,4) -- learn weights?
 # rhyming
 
