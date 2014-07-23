@@ -12,7 +12,7 @@ jinja_environment = jinja2.Environment(loader=
  
 ### Handlers ### 
 
-class HomeHandler(webapp2.RequestHandler):
+class NgramHandler(webapp2.RequestHandler):
   def get(self):
     # browse all objects in "Ngram" kind
     query = Ngram.query()
@@ -33,14 +33,7 @@ class MakePoemHandler(webapp2.RequestHandler):
 
     template_values = {
     }
-<<<<<<< HEAD
     template = jinja_environment.get_template('poems/makePoem.html')
-=======
-<<<<<<< HEAD
-    template = jinja_environment.get_template('generate.html')
-=======
-    template = jinja_environment.get_template('poems/generate.html')
->>>>>>> FETCH_HEAD
     self.response.out.write(template.render(template_values))
 
 
@@ -49,18 +42,14 @@ class PoemHandler(webapp2.RequestHandler):
     template_values = {
       'title' : 'Poem'
     }
-<<<<<<< HEAD
     template = jinja_environment.get_template('poems/generatedpoem.html')
-=======
-    template = jinja_environment.get_template('poems/makePoem.html')
->>>>>>> FETCH_HEAD
->>>>>>> FETCH_HEAD
+
     self.response.out.write(template.render(template_values))
 
  
 routes = [
-  ('/', HomeHandler),
+  ('/', MakePoemHandler),
   ('/poem', PoemHandler),
-  ('/make', MakePoemHandler),
+  ('/ngram', NgramHandler),
 ]
 app = webapp2.WSGIApplication(routes, debug=True)
