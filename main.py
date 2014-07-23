@@ -6,7 +6,6 @@ import os
 import webapp2
 
 
-
 jinja_environment = jinja2.Environment(loader=
 jinja2.FileSystemLoader(os.path.dirname(__file__)))
  
@@ -43,15 +42,27 @@ class MakePoemHandler(webapp2.RequestHandler):
 class PoemHandler(webapp2.RequestHandler):
   def get(self):
 
-    poem = generatePoem("shakespeare.txt") 
+    y = self.request.get("link")
+    for f in os.listdir("corpus"):
+      if y == f[:-4]:
+        author = str(f)
+    try:
+      ona = generatePoem("corpus/" + author)
+    except Exception as e:
+      self.response.out.write(str(e))
 
 
     template_values = {
-      'poem' : poem
+      'poem' : ona
     }
     template = jinja_environment.get_template('poems/generatedpoem.html')
 
     self.response.out.write(template.render(template_values))
+
+class PublishHandler(webapp2.RequestHandler):
+  def get(self):
+
+    
 
  
 routes = [
