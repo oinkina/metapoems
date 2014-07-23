@@ -169,15 +169,15 @@ def markov(ngrams, lineLength, n_probabilities=[0.5,0.5]):
 # rhyming
 
 
-def printPoem(corpus):
+def generatePoem(corpus):
   corp = wordsFromCorpus(corpus)
   ngrams = nestedDictToTuples(ngramsFromCorpus(corp, 3))
-  chain = markov(ngrams, 1000, [0.3,0.7])
+  chain = markov(ngrams, 100, [0.3,0.7])
   line = ' '.join(chain)
   return line
 
 def main():
-  printPoem('alice_in_wonderland.txt')
+  print generatePoem('alice_in_wonderland.txt')
 
 # def main():
 
