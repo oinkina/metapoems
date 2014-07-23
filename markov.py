@@ -170,18 +170,14 @@ def markov(ngrams, lineLength, n_probabilities=[0.5,0.5]):
 
 
 def printPoem(corpus):
-    corp = wordsFromCorpus(corpus)
-    ngrams = nestedDictToTuples(ngramsFromCorpus(corp, 3))
+  corp = wordsFromCorpus(corpus)
+  ngrams = nestedDictToTuples(ngramsFromCorpus(corp, 3))
+  chain = markov(ngrams, 1000, [0.3,0.7])
+  line = ' '.join(chain)
+  return line
 
-    chain = markov(ngrams, 1000, [0.3,0.7])
-    line = ' '.join(chain)
-    # return line
-    return line
-
-# def main():
-#   printPoem('alice_in_wonderland.txt')
-
-
+def main():
+  printPoem('alice_in_wonderland.txt')
 
 # def main():
 
@@ -193,7 +189,7 @@ def printPoem(corpus):
 #   line = ' '.join(chain)
 #   print line
 
-# if __name__ == '__main__':
-#    main()
+if __name__ == '__main__':
+  main()
 
 
