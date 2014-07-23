@@ -1,0 +1,78 @@
+body {
+  background-color: peachpuff;
+}
+
+.generate {
+    text-align: center;
+    border-bottom: solid 1px;
+    padding: 25px;
+}
+
+.choose {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.nav {
+    margin-top: 200px;
+}
+
+.middle{
+  
+}
+
+.authorpic {
+    height: 220px;
+    width: 279px;
+}
+
+.backdrop {
+    background-color: #ffffff;
+    opacity: .7;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.poemtitle {
+    opacity: .4;
+    text-decoration-color: white;
+}
+
+.middle {
+    margin-bottom: 50px;
+}
+    
+.poem {
+    border: solid 1px black;
+    /*background-image: url("abstract-art.jpg");*/
+    background-size: 805px 400px;
+    padding-bottom: 30px;
+}
+
+.pre {
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    border: solid 2px;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+.metapoets {
+  border-bottom: black 3px solid;
+  padding: 25px ;
+}    

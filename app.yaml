@@ -14,6 +14,8 @@ handlers:
   static_dir: static_files/js
 - url: /img
   static_dir: static_files/authorPictures
+- url: /corpus
+  static_dir: static_files/corpus
 
 - url: /.*
   script: main.app

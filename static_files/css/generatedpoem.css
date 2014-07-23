@@ -1,6 +1,6 @@
 body {
 /*  background-image: url("abstract-art.jpg"); */
-  background-image: ;
+  background-color: red;
   background-size: cover;
 }
 
@@ -22,11 +22,6 @@ h3 {
     text-align: center;
     margin: auto;
     border: solid 1px black;    
-}
-
-.poemtitle {
-    opacity: .4;
-    text-decoration-color: white;
 }
 
 .middle {
@@ -55,7 +50,6 @@ h3 {
   opacity: .7;
 }
 
-#image {
-  background-image: ;
-  size: 100px ;
+p {
+  
 }

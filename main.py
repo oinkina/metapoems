@@ -8,7 +8,7 @@ import webapp2
 
 
 jinja_environment = jinja2.Environment(loader=
-  jinja2.FileSystemLoader(os.path.dirname(__file__)))
+jinja2.FileSystemLoader(os.path.dirname(__file__)))
  
 ### Handlers ### 
 
@@ -29,18 +29,26 @@ class NgramHandler(webapp2.RequestHandler):
 
 class MakePoemHandler(webapp2.RequestHandler):
   def get(self):
-    file = self.request.get('file')
+    
 
     template_values = {
+    
     }
+
     template = jinja_environment.get_template('poems/makePoem.html')
+    
     self.response.out.write(template.render(template_values))
 
 
 class PoemHandler(webapp2.RequestHandler):
   def get(self):
+
+    # f = self.request.get('file')
+    # poem = printPoem(f)
+
     template_values = {
-      'title' : 'Poem'
+      # 'title' : 'Poem',
+      # 'poem': poem
     }
     template = jinja_environment.get_template('poems/generatedpoem.html')
 

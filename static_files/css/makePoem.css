@@ -3,15 +3,19 @@
     font-size: 80px;
     margin-top: 20px;
     font-family: 'EB Garamond', serif;
+    color: white
 }
 
 #subtitle {
     text-align: center;
     font-size: 30px;
     font-family: 'EB Garamond', serif;
+    color: white;
 }
 
-
+body {
+    background-color: black;
+}
     
 .apic {
     width: 150px;
