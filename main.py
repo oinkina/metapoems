@@ -1,5 +1,5 @@
 from datastore import Ngram
-from markov import printPoem
+from markov import generatePoem
 
 import jinja2 
 import os
@@ -43,7 +43,7 @@ class MakePoemHandler(webapp2.RequestHandler):
 class PoemHandler(webapp2.RequestHandler):
   def get(self):
 
-    poem = printPoem("shakespeare.txt") 
+    poem = generatePoem("shakespeare.txt") 
 
 
     template_values = {
