@@ -36,19 +36,18 @@ class MakePoemHandler(webapp2.RequestHandler):
     }
 
     template = jinja_environment.get_template('poems/makePoem.html')
-    
+
     self.response.out.write(template.render(template_values))
 
 
 class PoemHandler(webapp2.RequestHandler):
   def get(self):
 
-    # f = self.request.get('file')
-    # poem = printPoem(f)
+    poem = printPoem("shakespeare.txt") 
+
 
     template_values = {
-      # 'title' : 'Poem',
-      # 'poem': poem
+      'poem' : poem
     }
     template = jinja_environment.get_template('poems/generatedpoem.html')
 

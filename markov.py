@@ -3,6 +3,7 @@
 from collections import Counter, defaultdict
 from random import randrange, choice, uniform
 import re
+import urllib2
 
 ### if there's no n-gram match during synthesis you try fewer-grams
 # # corpus, n 
@@ -72,6 +73,12 @@ def wordsFromCorpus(f):
   # Open the file, read it into memory as a single string.
   with open(f) as text:
     text = text.read()
+
+#change opening it from file to opening it from url
+
+  # with urllib2.urlopen(f) as text:
+  #   text = text.read()
+
   # make lower, only keep actual words, no puncutation
   return re.split("[^\w']+", text.lower())
 
@@ -168,10 +175,13 @@ def printPoem(corpus):
 
     chain = markov(ngrams, 1000, [0.3,0.7])
     line = ' '.join(chain)
-    print line
+    # return line
+    return line
 
-def main():
-  printPoem('alice_in_wonderland.txt')
+# def main():
+#   printPoem('alice_in_wonderland.txt')
+
+
 
 # def main():
 
@@ -184,6 +194,6 @@ def main():
 #   print line
 
 # if __name__ == '__main__':
-#   main()
+#    main()
 
 
