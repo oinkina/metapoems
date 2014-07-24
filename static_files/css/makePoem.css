@@ -3,7 +3,8 @@
     font-size: 80px;
     margin-top: 20px;
     font-family: 'EB Garamond', serif;
-    color: white
+    color: white;
+    padding:0px ;
 }
 
 #subtitle {
@@ -11,11 +12,11 @@
     font-size: 30px;
     font-family: 'EB Garamond', serif;
     color: white;
+    padding: 0px;
+    margin-top: 0px;
 }
 
-body {
-    background-color: black;
-}
+
     
 .apic {
     width: 150px;
@@ -77,6 +78,18 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
+
+#header, #subtitle {
+    background-color: black;
+}
+
+#background {
+    background-image: url('/bgimg/suede.jpg');
+    width: 100%;
+    height: 100%;
+}
+
+
 
 /*#gSignInWrapper {
     background-color: white;
