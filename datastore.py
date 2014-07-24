@@ -2,10 +2,10 @@ from google.appengine.ext import ndb, db
 import pickle
 
 
-class Ngram(ndb.Model):
+# class Ngram(ndb.Model):
   
-  word  = ndb.StringProperty(required=True)
-  count = ndb.IntegerProperty(required=True)
+#   word  = ndb.StringProperty(required=True)
+#   count = ndb.IntegerProperty(required=True)
 
 
 # http://forums.udacity.com/questions/6021587/how-tostore-dictionary-and-other-python-objects-in-google-datastore
@@ -37,7 +37,6 @@ class DictProperty(db.Property):
   def empty(self, value):
     return value is None
 
-class LanguageModel(db.Model):
-   bigram   = DictProperty(required=True)
-   trigram  = DictProperty(required=True)
-   quadgram = DictProperty(required=True)
+class LanguageModel(ndb.Model):
+  author = ndb.StringProperty(required=True)
+  ngram  = ndb.StringProperty(required=True)

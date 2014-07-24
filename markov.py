@@ -3,7 +3,19 @@
 from collections import Counter, defaultdict
 from random import randrange, choice, uniform
 import re
+
 import urllib2
+import json
+
+url = "http://rhymebrain.com/talk?function=getRhymes&word=goodbye"
+try:
+  result = urllib2.urlopen(url)
+  result = result.read()
+  print result
+  parsed = json.loads(result)
+  print parsed
+except urllib2.URLError, e:
+  print e
 
 ### if there's no n-gram match during synthesis you try fewer-grams
 # # corpus, n 
