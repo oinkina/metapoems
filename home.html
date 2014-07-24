@@ -1,16 +1,11 @@
-{% include "header.html" %}
+<!DOCTYPE html>
+<head>
+  <title>Welcome to the MetaPoets Page!</title>
+</head>
 
-<div class = "container">
-  <h1>Ngram Database</h1>
-
-  <table>
-  {% for ngram in ngrams %}
-    <tr>
-      <td>word:  {{ ngram.word }}</td>
-      <td>count: {{ ngram.count }}</td>
-    </tr>
-  {% endfor %}
-  </table>
-</div>
-
-{% include "footer.html" %}
+<body>
+     <h1>METApoetry</h1>
+     <p>Select a poet to use their writing style:</p>
+     <p>Login into social media to generate a message with your posts:<p>
+       Twitter<br>Facebook<br>Google +
+</body>

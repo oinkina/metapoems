@@ -1,0 +1,52 @@
+.header {
+    min-height: 200px;
+    border-bottom: solid;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav {
+    margin-top: 150px;
+}
+
+.middle {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.authorpic {
+    height: 170px;
+    width: 100px;
+}
+
+.backdrop {
+    background-color: #ffffff;
+    opacity: .7;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.poemtitle {
+    background-color: #ffffff;
+    opacity: .4;
+}
+    
+.poem {
+    background-image: url("abstractArt/abstract-art-somebodys-smiling.jpg");
+}
+
+
+/*
+.footer {
+    position: relative;
+    bottom: 0;
+    border: solid;
+    width: 100%;
+    line-height: 20px;
+}
+    */

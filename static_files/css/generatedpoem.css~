@@ -1,0 +1,55 @@
+body {
+/*  background-image: url("abstract-art.jpg"); */
+  background-color: red;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: laine;
+  src: url(fonts/laine.TTF);
+  font-size:100%;
+  font-stretch:expanded;
+}
+
+h3 {
+    text-align: center;
+}
+
+.backdrop {
+    background-color: #fff;
+    opacity: .7;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    border: solid 1px black;    
+}
+
+.middle {
+    margin-bottom: 50px;
+}
+    
+.poem {
+  font-family: laine;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.metapoets {
+  border: black 1px solid;
+  background-color: #fff ;
+  opacity: .7;
+  margin: auto;
+  margin-top:5%;
+  width: 50%;
+  text-align: center;
+} 
+
+.bottombar {
+  border: black 1px solid;
+  background-color: #fff;
+  opacity: .7;
+}
+
+p {
+  
+}

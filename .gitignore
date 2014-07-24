@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-
-poems/betterpoem_home.html
-=======
 *.pyc
->>>>>>> FETCH_HEAD
+.DS_Store
+static_files/.DS_Store
+static_files/css/.DS_Store
+static_files/js/.DS_Store

@@ -1,16 +1,18 @@
 from datastore import Ngram
+from markov import generatePoem
 
 import jinja2 
 import os
 import webapp2
 
 
+
 jinja_environment = jinja2.Environment(loader=
-  jinja2.FileSystemLoader(os.path.dirname(__file__)))
+jinja2.FileSystemLoader(os.path.dirname(__file__)))
  
 ### Handlers ### 
 
-class HomeHandler(webapp2.RequestHandler):
+class NgramHandler(webapp2.RequestHandler):
   def get(self):
     # browse all objects in "Ngram" kind
     query = Ngram.query()
@@ -22,33 +24,37 @@ class HomeHandler(webapp2.RequestHandler):
       'ngrams' : ngrams
     }
 
-    template = jinja_environment.get_template('home.html')
+    template = jinja_environment.get_template('ngram.html')
     self.response.out.write(template.render(template_values))
-
-class PoemHandler(webapp2.RequestHandler):
-  def get(self):
-    template_values = {
-      'title' : 'Poem'
-    }
-<<<<<<< HEAD
-    template = jinja_environment.get_template('generate.html')
-=======
-    template = jinja_environment.get_template('poems/generate.html')
-    self.response.out.write(template.render(template_values))
-
 
 class MakePoemHandler(webapp2.RequestHandler):
   def get(self):
-    template_values = {
-    }
+    
+    template_values = {}
+
     template = jinja_environment.get_template('poems/makePoem.html')
->>>>>>> FETCH_HEAD
+
+    self.response.out.write(template.render(template_values))
+
+
+class PoemHandler(webapp2.RequestHandler):
+  def get(self):
+
+    poem = generatePoem("shakespeare.txt") 
+
+    template_values = {
+      'poem' : poem
+    }
+
+    template = jinja_environment.get_template('poems/generatedpoem.html')
+
     self.response.out.write(template.render(template_values))
 
  
 routes = [
-  ('/', HomeHandler),
+  ('/', MakePoemHandler),
   ('/poem', PoemHandler),
-  ('/make', MakePoemHandler),
+  ('/ngram', NgramHandler),
 ]
+
 app = webapp2.WSGIApplication(routes, debug=True)
