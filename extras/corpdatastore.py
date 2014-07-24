@@ -1,6 +1,7 @@
 from google.appengine.ext import ndb
 import webapp2
-import authors
+import pickle
+
 
 
 class AuthorCorpus(ndb.Model):
@@ -10,7 +11,8 @@ class AuthorCorpus(ndb.Model):
   directory = ndb.StringProperty()
   filename = ndb.StringProperty()
 
-for i in authors.authors:
+authordb = pickle.load(infile)
+for i in authordb:
   author = AuthorCorpus(author_name=i)
   author.put()
 
