@@ -6,7 +6,7 @@ body {
 
 @font-face {
   font-family: laine;
-  src: url(static_files/bootstrap/fonts/laine.TTF);
+  src: url(/fonts/laine.TTF);
   font-size:100%;
   font-stretch:expanded;
 }
@@ -18,7 +18,7 @@ h3 {
 .backdrop {
     background-color: #fff;
     opacity: .7;
-    width: 50%;
+    width: 75%;
     text-align: center;
     margin: auto;
     border: solid 1px black;    
@@ -30,7 +30,7 @@ h3 {
     
 .poem {
   font-family: laine;
-  font-size: 35px;
+  font-size: 50px;
   margin-bottom: 50px;
 }
 
@@ -49,11 +49,3 @@ h3 {
   background-color: #fff;
   opacity: .7;
 }
-
-<<<<<<< HEAD
-.button 
-=======
-p {
-  
-}
->>>>>>> FETCH_HEAD
