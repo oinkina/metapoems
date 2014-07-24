@@ -1,12 +1,12 @@
 body {
-/*  background-image: url("abstract-art.jpg"); */
+  background-image: url(/images/abstract-art-1.jpg); */
   background-color: red;
   background-size: cover;
 }
 
 @font-face {
   font-family: laine;
-  src: url(static_files/bootstrap/fonts/laine.TTF);
+  src: url(/fonts/laine.TTF);
   font-size:100%;
   font-stretch:expanded;
 }
@@ -18,7 +18,7 @@ h3 {
 .backdrop {
     background-color: #fff;
     opacity: .7;
-    width: 50%;
+    width: 70%;
     text-align: center;
     margin: auto;
     border: solid 1px black;    
@@ -30,8 +30,10 @@ h3 {
     
 .poem {
   font-family: laine;
-  font-size: 35px;
+  font-size: 50px;
   margin-bottom: 50px;
+  padding-top: 0px;
+  margin-top: 20px;
 }
 
 .metapoets {
