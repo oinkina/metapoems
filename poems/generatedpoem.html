@@ -1,12 +1,17 @@
 {% include "header.html" %}
+<head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script>
+  var images = ['abstract-art-1.jpg', 'abstract-art-2.jpg', 'abstract-art-3.jpg', 'abstract-art-4.jpg', 'abstract-art-5.jpg', 'abstract-art-6.jpg', 'abstract-art-7.jpg', 'abstract-art-8.jpg', 'abstract-art-9.jpg', 'abstract-art-10.jpg', 'abstract-art-11.jpg'];
+  $('body').css({'background-image', 'url(images/' + images[Math.floor(Math.random() * images.length)] + ')'});
+  </script>
+<head>
 
 <link href="stylesheets/generatedpoem.css" rel="stylesheet">
   <body>
 <!--    <div class="metapoets">
       <h2>METApoetry</h2>
     </div> -->
-   <div id="#image"></div>
-    <br><br><br>
     <div class="poem">  
       <div class="backdrop">
         <div>
@@ -18,6 +23,5 @@
 <!--    <div class="bottombar"> METApoetry! Make your own<a href="http://metapoems.appspot.com">here</a>
     </div> -->   
 
-    <script type="text/javascript" src="js/flickr.js"></script>
 
 {% include "footer.html" %}
