@@ -1,31 +1,15 @@
-from datastore import Ngram
-from markov import generatePoem
+from markov import *
 
 import jinja2 
 import os
 import webapp2
-
-
+#from google.appengine.api import urlfetch
 
 jinja_environment = jinja2.Environment(loader=
 jinja2.FileSystemLoader(os.path.dirname(__file__)))
  
+
 ### Handlers ### 
-
-class NgramHandler(webapp2.RequestHandler):
-  def get(self):
-    # browse all objects in "Ngram" kind
-    query = Ngram.query()
-    # retrieve ngrams and set to var ngrams 
-    ngrams = query.fetch()
-
-    template_values = {
-      'title'  : "Datastore", 
-      'ngrams' : ngrams
-    }
-
-    template = jinja_environment.get_template('ngram.html')
-    self.response.out.write(template.render(template_values))
 
 class MakePoemHandler(webapp2.RequestHandler):
   def get(self):
@@ -40,21 +24,43 @@ class MakePoemHandler(webapp2.RequestHandler):
 class PoemHandler(webapp2.RequestHandler):
   def get(self):
 
-    poem = generatePoem("shakespeare.txt") 
+    #poem = markov.generatePoem("shakespeare.txt") 
+    
+    y = self.request.get("link")
+    for f in os.listdir("corpus"):
+      if y == f[:-4]:
+        author = str(f)
+
+    ona = generatePoem("corpus/" + author)
+    # try:
+    #   ona = generatePoem("corpus/" + author)
+    # except Exception as e:
+    #   self.response.out.write(str(e))
 
     template_values = {
-      'poem' : poem
+      'poem' : ona
     }
 
     template = jinja_environment.get_template('poems/generatedpoem.html')
 
     self.response.out.write(template.render(template_values))
 
+# class PublishHandler(webapp2.RequestHandler):
+#   def get(self):
+
  
 routes = [
+  #('/home', HomeHandler),
   ('/', MakePoemHandler),
   ('/poem', PoemHandler),
-  ('/ngram', NgramHandler),
 ]
 
 app = webapp2.WSGIApplication(routes, debug=True)
+
+
+### RHYMING ###
+
+# url = "http://rhymebrain.com/talk?function=getRhymes&word=hello"
+# result = urlfetch.fetch(url)
+# if result.status_code == 200:
+#   output = result.content

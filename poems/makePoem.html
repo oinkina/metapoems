@@ -1,27 +1,124 @@
+<<<<<<< HEAD
   {% include "header.html" %}    
+=======
+
+<DOCTYPE! html>
+>>>>>>> FETCH_HEAD
 <link href="stylesheets/makePoem.css" rel= "stylesheet">
 <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+<meta name="google-signin-clientid" content="CLIENT_ID" />
+<meta name="google-signin-scope" content="https://www.googleapis.com/auth/plus.login" />
+<meta name="google-signin-requestvisibleactions" content="http://schema.org/AddAction" />
+<meta name="google-signin-cookiepolicy" content="single_host_origin" />
+<meta name="google-signin-callback" content="signinCallback" />
+<script type="text/javascript">
+(function() {
+  var po = document.createElement('script');
+  po.type = 'text/javascript'; po.async = true;
+  po.src = 'https://apis.google.com/js/client:plusone.js?onload=render';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(po, s);
+})();
+
+/* Executed when the APIs finish loading */
+function render() {
+
+  // Additional params
+  var additionalParams = {
+    'theme' : 'dark'
+  };
+
+  gapi.signin.render('myButton', additionalParams);
+}
+</script>
+<!-- In the callback, you would hide the gSignInWrapper element on a
+successful sign in -->
 
 <body>
 <div id="header"> <h1>Metapoems</h1></div>
 <div id= "subtitle"><h3>Choose your favorite author or log into facebook and make a poem based on your statuses</h3> </div>
 
 <div id="mid-bottom">
-<div id="fb"><div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false">Log into your creative side via Facebook</div></div>
+<div id="fb">
+  <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false">
+    Log into your creative side via Facebook
+  </div>
+</div>
 
-<div id="login-button"><button></button></div>
+<!-- In the callback, you would hide the gSignInWrapper element on a
+successful sign in -->
 
+<<<<<<< HEAD
 <div id="authorimg"> 
     <!-- <div id="row1"> -->
 
             <div class="outer">
                 <div class="image">
                     <a href="/poem?beep=1237"><img class="apic" src="img/eliot_main_lg.jpg"</a>
+=======
+<div id="gSignInWrapper">
+  <div id="myButton" class="classesToStyleWith">
+    Sign in with Google
+  </div>
+</div>
+
+
+    <div id="login-button"><button></button></div>
+    
+    <div id="authorimg"> 
+        
+                <div class="outer">
+                    <div class="image">
+                        <a href="/poem?link=shakespeare"><img class="apic" src="img/e-e-cummings-1.jpg"</a>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="image">
+                        <a href="/poem?link=shakespeare"><img class="apic" src="img/leonid_andreyev.jpg"</a>
+                    </div>
+>>>>>>> FETCH_HEAD
+                </div>
+                <div class="outer">
+                    <div class="image">
+                        <a href="/poem?link=shakespeare"><img class="apic" src="img/Edgar_Allen_Poe_1898.jpg"</a>
+                    </div>
+                </div>
+                <div class="outer">
+                    <div class="image">
+                        <a href="/poem?link=shakespeare"><img class="apic" src="img/eliot_main_lg.jpg"</a>
+                    </div>
+
+                
+
+<<<<<<< HEAD
+    <!-- </div> -->
+    <!-- <div id="row2"> -->
+=======
+            <div class="outer">
+                <div class="image">
+                    <a href="/poem?link=shakespeare"><img class="apic" src="img/fyodor-dostoevsky_6-t.jpg"</a>
+                </div>
+            </div>
+    </div>
+    
+            <div class="outer">
+                <div class="image">
+                    <a href="#"><img class="apic" src="img/Hemingway.gif"</a>
                 </div>
             </div>
 
-    <!-- </div> -->
-    <!-- <div id="row2"> -->
+            <div class="outer">
+                <div class="image">
+                    <a href="#"><img class="apic" src="img/langston-hughes-1.jpg"</a>
+                </div>
+            </div>
+
+            <div class="outer">
+                <div class="image">
+                    <a href="#"><img class="apic" src="img/maya%20angelou.jpg"</a>
+                </div>
+            </div>
+>>>>>>> FETCH_HEAD
 
             <div class="outer">
                 <div class="image">
@@ -34,8 +131,7 @@
                     <a href="static_files/corpora/shakespeare.txt.rftd"><img class="apic" src="img/Shakespeare_Droeshout_1623.jpg"</a>
                 </div>
             </div>
-        <!-- </div> -->
-        <!-- <div id="row3"> -->
+       
 
             <div class="outer">
                 <div class="image">
@@ -43,7 +139,34 @@
                 </div>
             </div>
 
+<<<<<<< HEAD
         <!-- </div> -->
+=======
+            <div class="outer">
+                <div class="image">
+                    <a href="#"><img class="apic" src="img/Vladimir-Nabokov.jpg"</a>
+                </div>
+            </div>
+
+            <div class="outer">
+                <div class="image">
+                    <a href="#"><img class="apic" src="img/walt-whitman.jpg"</a>
+                </div>
+            </div>
+
+            <div class="outer">
+                <div class="image">
+                    <a href="#"><img class="apic" src="img/youngfrost.jpg"</a>
+                </div>
+            </div>
+
+            <div class="outer">
+                <div class="image">
+                    <a href="#"><img class="apic" src="img/silversteinshel_custom-d9a683da694bd0e0372729064b7ab15881ed646b-s6-c30.jpg"</a>
+                </div>
+            </div>
+       </div> 
+>>>>>>> FETCH_HEAD
     
 </div>
 </div>
@@ -127,6 +250,36 @@
         'Thanks for logging in, ' + response.name + '!';
     });
   }
+
+  /* make the API call */
+  FB.api(
+      "/me/statuses",
+      function (response) {
+        if (response && !response.error) {
+          all = response
+          console.log(all)
+        }
+      }
+  );
+
+
 </script>
 
-{% include "footer.html" %}
+<script>
+function signinCallback(authResult) {
+  if (authResult['status']['signed_in']) {
+    // Update the app to reflect a signed in user
+    // Hide the sign-in button now that the user is authorized, for example:
+    document.getElementById('signinButton').setAttribute('style', 'display: none');
+  } else {
+    // Update the app to reflect a signed out user
+    // Possible error values:
+    //   "user_signed_out" - User is signed-out
+    //   "access_denied" - User denied access to your app
+    //   "immediate_failed" - Could not automatically log in the user
+    console.log('Sign-in state: ' + authResult['error']);
+  }
+}
+
+</script>
+

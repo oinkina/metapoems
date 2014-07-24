@@ -3,7 +3,8 @@
 from collections import Counter, defaultdict
 from random import randrange, choice, uniform
 import re
-import urllib2
+
+import json
 
 ### if there's no n-gram match during synthesis you try fewer-grams
 # # corpus, n 
@@ -33,7 +34,7 @@ def testSampleNgrams(n, wordcountTuples):
   return counts
 
 # testSample :: 
-# (test times :: Int), (probabilities | sum to 1 :: [Float])
+# (test times :: Int), (probabilities :: Float || Int)
 #   -> (counts in n trials :: [Int])
 def testSample(n, probabilities):
 
@@ -126,7 +127,7 @@ def sampleNgrams(wordcountTuples):
       break
   return chosenWord
 
-# sample :: (probabilities | sum to 1 :: [Float])
+# sample :: (probabilities :: Float || Int)
 # -> (index of probability selected :: Int) 
 def sample(probabilities):
   totals = [sum(probabilities[:i+1]) for i in range(len(probabilities))]
@@ -176,8 +177,13 @@ def generatePoem(corpus):
   line = ' '.join(chain)
   return line
 
+
+
+
+
 def main():
-  print generatePoem('alice_in_wonderland.txt')
+  corpus = 'corpus/alice_in_wonderland.txt'
+  print generatePoem(corpus)
 
 # def main():
 
