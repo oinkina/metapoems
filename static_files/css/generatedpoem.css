@@ -1,5 +1,5 @@
 body {
-/*  background-image: url("abstract-art.jpg"); */
+  background-image: url(/images/abstract-art-1.jpg); */
   background-color: red;
   background-size: cover;
 }
@@ -18,7 +18,7 @@ h3 {
 .backdrop {
     background-color: #fff;
     opacity: .7;
-    width: 75%;
+    width: 70%;
     text-align: center;
     margin: auto;
     border: solid 1px black;    
@@ -32,6 +32,8 @@ h3 {
   font-family: laine;
   font-size: 50px;
   margin-bottom: 50px;
+  padding-top: 0px;
+  margin-top: 20px;
 }
 
 .metapoets {

@@ -19,7 +19,9 @@ handlers:
 - url: /fonts
   static_dir: static_files/fonts
 - url: /bgimg
-  static_dir: static_files/backgroundimg  
+  static_dir: static_files/backgroundimg
+- url: /images
+  static_dir: static_files/abstractArt  
 
 - url: /.*
   script: main.app
