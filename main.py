@@ -1,4 +1,4 @@
-import markov
+from markov import *
 
 import jinja2 
 import os
@@ -38,10 +38,12 @@ class PoemHandler(webapp2.RequestHandler):
     for f in os.listdir("corpus"):
       if y == f[:-4]:
         author = str(f)
-    try:
-      ona = generatePoem("corpus/" + author)
-    except Exception as e:
-      self.response.out.write(str(e))
+
+    ona = generatePoem("corpus/" + author)
+    # try:
+    #   ona = generatePoem("corpus/" + author)
+    # except Exception as e:
+    #   self.response.out.write(str(e))
 
     template_values = {
       'poem' : ona
