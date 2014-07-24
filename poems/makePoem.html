@@ -1,4 +1,4 @@
-   
+
 <DOCTYPE! html>
 <link href="stylesheets/makePoem.css" rel= "stylesheet">
 <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
@@ -29,18 +29,26 @@ function render() {
 </script>
 <!-- In the callback, you would hide the gSignInWrapper element on a
 successful sign in -->
-<div id="gSignInWrapper">
-  <div id="myButton" class="classesToStyleWith">
-    Sign in with Google
-  </div>
-</div>
 
 <body>
 <div id="header"> <h1>Metapoems</h1></div>
 <div id= "subtitle"><h3>Choose your favorite author or log into facebook and make a poem based on your statuses</h3> </div>
 
 <div id="mid-bottom">
-<div id="fb"><div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false">Log into your creative side via Facebook</div></div>
+<div id="fb">
+  <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false">
+    Log into your creative side via Facebook
+  </div>
+</div>
+
+<!-- In the callback, you would hide the gSignInWrapper element on a
+successful sign in -->
+
+<div id="gSignInWrapper">
+  <div id="myButton" class="classesToStyleWith">
+    Sign in with Google
+  </div>
+</div>
 
 
     <div id="login-button"><button></button></div>
