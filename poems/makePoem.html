@@ -193,5 +193,19 @@
         'Thanks for logging in, ' + response.name + '!';
     });
   }
+
+  Graph Explorer
+
+  /* make the API call */
+  FB.api(
+      "/me/statuses",
+      function (response) {
+        if (response && !response.error) {
+          print message
+        }
+      }
+  );
+
+
 </script>
 
