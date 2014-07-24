@@ -11,14 +11,6 @@ jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
 ### Handlers ### 
 
-class HomeHandler(webapp2.RequestHandler):
-  def get(self):
-    template_values = {
-      'output' : output
-    }
-    template = jinja_environment.get_template('home.html')
-    self.response.out.write(template.render(template_values))
-
 class MakePoemHandler(webapp2.RequestHandler):
   def get(self):
     
@@ -58,7 +50,7 @@ class PoemHandler(webapp2.RequestHandler):
 
  
 routes = [
-  ('/home', HomeHandler),
+  #('/home', HomeHandler),
   ('/', MakePoemHandler),
   ('/poem', PoemHandler),
 ]

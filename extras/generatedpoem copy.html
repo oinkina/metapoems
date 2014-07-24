@@ -1,16 +1,19 @@
 <!DOCTYPE html>
   <head>
     <title>{{ title }}</title>
+    <!-- CSS stylesheet -->
     <link href="generatedpoem.css" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+    <!-- jQuery for altering HTML/CSS properties and values-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <!-- JavaScript for FLick API -->
     <script type="text/javascript" src="flickr.js"></script>
+    <!-- jsPDF for exporting as PDF-->
+<!--<script src="../static_files/jsPDF-0.9.0rc2/jspdf.js"></script> 
+    <script src="../static_files/jsPDF-0.9.0rc2/jspdf.plugin.addimage.js"></script> 
+    <script src="../static_files/jsPDF-0.9.0rc2/jspdf.plugin.from_html.js"></script> --> 
   </head>
   
   <body>
-<!--    <div class="metapoets">
-      <h2>METApoetry</h2>
-    </div> -->   
-   <div id="#image"></div>
     <br><br><br>
     <div class="poem">  
       <div class="backdrop">
@@ -35,8 +38,9 @@
         and press your lips to mine <br>
         till they are incandescent <br>
         </p>   
-    </div>
-<!--    <div class="bottombar"> METApoetry! Make your own<a href="http://metapoems.appspot.com">here</a>
-    </div> -->      
+  </div class="button">
+    <button type="button">Create an image </button>
+    <button type="button">Create a PDF file</button>
+  </div>     
   </body>
 </html>

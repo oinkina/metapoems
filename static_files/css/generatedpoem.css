@@ -6,7 +6,7 @@ body {
 
 @font-face {
   font-family: laine;
-  src: url(fonts/laine.TTF);
+  src: url(static_files/bootstrap/fonts/laine.TTF);
   font-size:100%;
   font-stretch:expanded;
 }
@@ -50,6 +50,10 @@ h3 {
   opacity: .7;
 }
 
+<<<<<<< HEAD
+.button 
+=======
 p {
   
 }
+>>>>>>> FETCH_HEAD
