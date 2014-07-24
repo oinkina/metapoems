@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-  {% include "header.html" %}    
-=======
+{% include "header.html" %}    
 
-<DOCTYPE! html>
->>>>>>> FETCH_HEAD
 <link href="stylesheets/makePoem.css" rel= "stylesheet">
 <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
 <meta name="google-signin-clientid" content="CLIENT_ID" />
@@ -11,28 +7,6 @@
 <meta name="google-signin-requestvisibleactions" content="http://schema.org/AddAction" />
 <meta name="google-signin-cookiepolicy" content="single_host_origin" />
 <meta name="google-signin-callback" content="signinCallback" />
-<script type="text/javascript">
-(function() {
-  var po = document.createElement('script');
-  po.type = 'text/javascript'; po.async = true;
-  po.src = 'https://apis.google.com/js/client:plusone.js?onload=render';
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(po, s);
-})();
-
-/* Executed when the APIs finish loading */
-function render() {
-
-  // Additional params
-  var additionalParams = {
-    'theme' : 'dark'
-  };
-
-  gapi.signin.render('myButton', additionalParams);
-}
-</script>
-<!-- In the callback, you would hide the gSignInWrapper element on a
-successful sign in -->
 
 <body>
 <div id="header"> <h1>Metapoems</h1></div>
@@ -48,14 +22,12 @@ successful sign in -->
 <!-- In the callback, you would hide the gSignInWrapper element on a
 successful sign in -->
 
-<<<<<<< HEAD
 <div id="authorimg"> 
     <!-- <div id="row1"> -->
 
             <div class="outer">
                 <div class="image">
                     <a href="/poem?beep=1237"><img class="apic" src="img/eliot_main_lg.jpg"</a>
-=======
 <div id="gSignInWrapper">
   <div id="myButton" class="classesToStyleWith">
     Sign in with Google
@@ -283,3 +255,25 @@ function signinCallback(authResult) {
 
 </script>
 
+<script type="text/javascript">
+(function() {
+  var po = document.createElement('script');
+  po.type = 'text/javascript'; po.async = true;
+  po.src = 'https://apis.google.com/js/client:plusone.js?onload=render';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(po, s);
+})();
+
+/* Executed when the APIs finish loading */
+function render() {
+
+  // Additional params
+  var additionalParams = {
+    'theme' : 'dark'
+  };
+
+  gapi.signin.render('myButton', additionalParams);
+}
+</script>
+<!-- In the callback, you would hide the gSignInWrapper element on a
+successful sign in -->
