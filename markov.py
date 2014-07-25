@@ -185,11 +185,12 @@ def markov(ngrams, lineLength, error, lines, n_probabilities=[0.5,0.5]):
     while currentLineLength < thisLineLength:
       n = sample(n_probabilities)+2 
       nextWord = sampleNgrams(n, chain, ngrams)
-      poem += nextWord
       chain += nextWord
 
       if firstLine:
         title += nextWord
+      else:
+        poem += nextWord
 
       currentLineLength += 1
 
