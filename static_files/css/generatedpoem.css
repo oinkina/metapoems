@@ -25,6 +25,10 @@ h3 {
 /*    border: solid 1px black;   */ 
 }
 
+form {
+  font-size: 18px;
+}
+
 .middle {
     margin-bottom: 50px;
 }
