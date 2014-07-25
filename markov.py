@@ -154,30 +154,40 @@ def sample(probabilities):
 
 #   return chain
 
+# (n :: Int), (chain :: [Word]), ngrams -> Word
+def sampleNgrams(n, chain, ngrams):
+  priorWords = ' '.join(chain[-n+1:]) # take last n-1 words to end of chain
+  if priorWords in ngrams:
+    return [sampleWords(ngrams[priorWords])]
+  elif n > 0: 
+      return sampleNgrams(n - 1, chain, ngrams)
+  else:
+      return firstWords(ngrams)
 
-def markov(ngrams, lineLength, lines, n_probabilities=[0.5,0.5]):
+# ngrams -> [Word]
+def firstWords(ngrams):
   ## note: underweights ngrams with lots of instances for first word
   firstNgram = choice(ngrams.items()) # :: (wordn-1, [(wordn, count)])
   firstStr = firstNgram[0] + " " + choice(firstNgram[1])[0] # :: "wordn-1 wordn"
-  chain = firstStr.split(' ') # :: [wordn-1, wordn]
+  return firstStr.split(' ') # :: [wordn-1, wordn]
 
-  poem = []
+def markov(ngrams, lineLength, lines, n_probabilities=[0.5,0.5]):
+  chain = firstWords(ngrams)
+  currentLineLength = len(chain)
+  poem = chain
 
-  for i in xrange(lines):
+  # for each line
+  while lines > 0:
+    # for each word in line
+    while currentLineLength < lineLength:
+      n = sample(n_probabilities)+2 
+      chain += sampleNgrams(n, chain, ngrams)
+      poem += chain[-1]
+      currentLineLength += 1
 
-    for i in xrange(lineLength-len(chain)):
-
-      if chain:
-        n = sample(n_probabilities)+2 
-        priorWords = ' '.join(chain[-n+1:]) # take last n-1 words to end of chain
-
-      chain += [sampleWords(ngrams[priorWords])] # ngrams[priorWords] :: wordcountTuples
-
-    n = sample(n_probabilities)+2 
-    priorWords = ' '.join(chain[-n+1:])
-    poem += chain
     poem += [" <br> "]
-    chain = [] #reset chain so that line is actually line length
+    currentLineLength = 0
+    lines -= 1
 
   return poem 
 
