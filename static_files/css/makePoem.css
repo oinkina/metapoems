@@ -71,19 +71,12 @@ body {
     display: inline-block;
 }
 
-.fb-login-button {
-    width: 500px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#fb {
-    width: 500px;
-    margin-right: auto;
-    margin-left: auto;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    filter: grayscale(100%);
+.overlay {
+    position: absolute;
+    background-color: black;
+    color: black;
+    width: 150px;
+    height: 170px;
 }
 
 #authorimg {
@@ -95,8 +88,9 @@ body {
     margin-left: auto;
 }
 
-
-
+a {
+    color: black;
+}
 /*#gSignInWrapper {
     background-color: white;
     color: black;
