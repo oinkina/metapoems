@@ -26,6 +26,7 @@ class PoemHandler(webapp2.RequestHandler):
     
     lineLength = self.request.get('lineLength')
     lines = self.request.get('lines')
+    error = self.request.get('error')
 
     y = self.request.get("link")
     for f in os.listdir("corpus"):
