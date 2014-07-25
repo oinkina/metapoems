@@ -52,14 +52,20 @@ class NewPoemHandler(webapp2.RequestHandler):
   def get(self):
     if self.request.get('lineLength'): 
       lineLength = int(self.request.get('lineLength'))
+    else:
+      lineLength = 7
     if self.request.get('lines'):
       lines = int(self.request.get('lines'))
+    else:
+      lines = 12
     if self.request.get('error'):
       error = int(self.request.get('error'))
+    else:
+      error = 3
     author = self.request.get('link')
 
     #title, poem = generatePoem("corpus/" + author, lineLength, error, lines)
-    title, poem = generatePoem("corpus/" + author, lineLength=7, error = 3, lines=10)
+    title, poem = generatePoem("corpus/" + author, lineLength, error, lines)
     # try:
     #   ona = generatePoem("corpus/" + author)
     # except Exception as e:
