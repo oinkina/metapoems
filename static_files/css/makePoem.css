@@ -30,7 +30,8 @@ body {
 }
 
 body {
-    background-image: url('/bgimg/scratches.jpg');
+    background-image: url('/bgimg/black.jpg');
+    background-size: cover;
 }
 
     
