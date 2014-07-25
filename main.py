@@ -24,21 +24,23 @@ class MakePoemHandler(webapp2.RequestHandler):
 class PoemHandler(webapp2.RequestHandler):
   def get(self):
 
-    #poem = markov.generatePoem("shakespeare.txt") 
-    
+    lineLength = self.request.get('lineLength')
+    lines = self.request.get('lines')
+
     y = self.request.get("link")
     for f in os.listdir("corpus"):
       if y == f[:-4]:
         author = str(f)
 
-    ona = generatePoem("corpus/" + author)
+    ona = generatePoem("corpus/" + author, lineLength=7, lines=20)
     # try:
     #   ona = generatePoem("corpus/" + author)
     # except Exception as e:
     #   self.response.out.write(str(e))
 
     template_values = {
-      'poem' : ona
+      'poem' : ona,
+      'author' : author
     }
 
     template = jinja_environment.get_template('poems/generatedpoem.html')
@@ -48,11 +50,19 @@ class PoemHandler(webapp2.RequestHandler):
 # class PublishHandler(webapp2.RequestHandler):
 #   def get(self):
 
+# class NewPoemHandler(webapp2.RequestHandler):
+#   def get(self):
+#     lineLength = self.request.get('lineLength')
+#     lines = self.request.get('lines')
+
+
+
  
 routes = [
   #('/home', HomeHandler),
   ('/', MakePoemHandler),
   ('/poem', PoemHandler),
+  ('/newpoem', PoemHandler)
 ]
 
 app = webapp2.WSGIApplication(routes, debug=True)
