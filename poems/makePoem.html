@@ -1,7 +1,10 @@
 {% include "header.html" %}    
 
 <link href="stylesheets/makePoem.css" rel= "stylesheet">
+<script type="text/javascript" href="js/makePoem.js"></script>
 <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 
 <body>
 <div id="header"> <h1>Metapoems</h1></div>
@@ -25,17 +28,17 @@
         
                 <div class="outer">
                     <div class="image">
-                        <a href="/poem?link=shelley"><img class="apic" src="img/shelly.jpg"</a>
+                        <a href="/poem?link=shelley"><img id="shelley" class="apic" src="img/shelly.jpg"</a>
                     </div>
                 </div>
                 <div class="outer">
                     <div class="image">
-                        <a href="/poem?link=lewiscaroll"><img class="apic" src="img/lewiscaroll.jpg"</a>
+                        <a id="lewis" href="/poem?link=lewiscaroll"><img class="apic" src="img/lewiscaroll.jpg"</a>
                     </div>
                 </div>
                 <div class="outer">
                     <div class="image">
-                        <a href="/poem?link=nabokov"><img class="apic" src="img/Vladimir-Nabokov.jpg"</a>
+                        <a id="nabokov" href="/poem?link=nabokov"><img class="apic" src="img/Vladimir-Nabokov.jpg"</a>
                     </div>
                 </div>
                 <div class="outer">
@@ -108,9 +111,35 @@
 
             <div class="outer">
                 <div class="image">
-                    <a href="/poem?link=thoreau"><img class="apic" src="img/thoreau.jpg"</a>
+                    <a href="/poem?link=melville"><img class="apic" src="img/thoreau.jpg"</a>
                 </div>
             </div>
+                
+            <div class="outer">
+                <div class="image">
+                    <a href="/poem?link=chesterton"><img class="apic" src="img/thoreau.jpg"</a>
+                </div>
+            </div>
+                
+            <div class="outer">
+                <div class="image">
+                    <a href="/poem?link=burgess"><img class="apic" src="img/thoreau.jpg"</a>
+                </div>
+            </div>
+                
+            <div class="outer">
+                <div class="image">
+                    <a href="/poem?link=austen"><img class="apic" src="img/thoreau.jpg"</a>
+                </div>
+            </div>
+            
+            <div class="outer">
+                <div class="image">
+                    <a href="/poem?link=kennedy"><img class="apic" src="img/thoreau.jpg"</a>
+                </div>
+            </div>
+                
+                
        </div> 
     
 </div>
@@ -118,6 +147,8 @@
 
 </div>
 </div>
+
+<div id="hidden"></div>
 
 <script>
   // This is called with the results from from FB.getLoginStatus().
@@ -194,6 +225,7 @@
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me/statuses', function(response) {
       console.log(response);
+      $("#hidden").html(response)
 
     });
   }
@@ -220,6 +252,8 @@ function render() {
 
   gapi.signin.render('myButton', additionalParams);
 }
+
+$("#hidden").html(response)
 </script>
 <!-- In the callback, you would hide the gSignInWrapper element on a
 successful sign in -->
