@@ -21,13 +21,13 @@ import json
 ### Tests of Probability Samplings ###
 
 # test sampling of wordcountTuples
-def testSampleNgrams(n, wordcountTuples):
+def testSampleWords(n, wordcountTuples):
   # initialize counts
   counts = []
   for i in xrange(len(wordcountTuples)):
     counts += [0]
   for i in xrange(n):
-    w = sampleNgrams(wordcountTuples)
+    w = sampleWords(wordcountTuples)
     for i in xrange(len(wordcountTuples)):
       if w == wordcountTuples[i][0]:
         counts[i] += 1
@@ -118,8 +118,8 @@ def nestedDictToTuples(d):
     d_tuples[k] = dictToPartialSums(v)
   return d_tuples
 
-# sampleNgrams :: wordcountTuples -> word 
-def sampleNgrams(wordcountTuples):
+# sampleWords :: wordcountTuples -> word 
+def sampleWords(wordcountTuples):
   rand = randrange(wordcountTuples[-1][1])
   for i in range(len(wordcountTuples)): 
     if rand < wordcountTuples[i][1]:
@@ -150,7 +150,7 @@ def sample(probabilities):
 #   for i in xrange(lineLength-len(chain)):
 #     n = sample(n_probabilities)+2 
 #     priorWords = ' '.join(chain[-n+1:]) # take last n-1 words to end of chain
-#     chain += [sampleNgrams(ngrams[priorWords])] # ngrams[priorWords] :: wordcountTuples
+#     chain += [sampleWords(ngrams[priorWords])] # ngrams[priorWords] :: wordcountTuples
 
 #   return chain
 
@@ -161,18 +161,22 @@ def markov(ngrams, lineLength, lines, n_probabilities=[0.5,0.5]):
   firstStr = firstNgram[0] + " " + choice(firstNgram[1])[0] # :: "wordn-1 wordn"
   chain = firstStr.split(' ') # :: [wordn-1, wordn]
 
-  poem = ""
+  poem = []
 
   for i in xrange(lines):
+
     for i in xrange(lineLength-len(chain)):
+
       if chain:
         n = sample(n_probabilities)+2 
         priorWords = ' '.join(chain[-n+1:]) # take last n-1 words to end of chain
-      chain += [sampleNgrams(ngrams[priorWords])] # ngrams[priorWords] :: wordcountTuples
+
+      chain += [sampleWords(ngrams[priorWords])] # ngrams[priorWords] :: wordcountTuples
+
     n = sample(n_probabilities)+2 
     priorWords = ' '.join(chain[-n+1:])
-    poem += ' '.join(chain)
-    poem += " <br> "
+    poem += chain
+    poem += [" <br> "]
     chain = [] #reset chain so that line is actually line length
 
   return poem 
@@ -195,9 +199,9 @@ def markov(ngrams, lineLength, lines, n_probabilities=[0.5,0.5]):
 
 def generatePoem(corpus):
   corp = wordsFromCorpus(corpus)
-  ngrams = nestedDictToTuples(ngramsFromCorpus(corp, 3))
-  poem = markov(ngrams, 5, 14, [0.3,0.7])
-  return poem
+  ngrams = nestedDictToTuples(ngramsFromCorpus(corp, 4))
+  poem = markov(ngrams, 5, 14, [0.1,0.7,0.2])
+  return ' '.join(poem)
 
 
 
