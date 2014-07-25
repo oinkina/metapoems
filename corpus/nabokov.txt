@@ -1,11 +1,5 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf200
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 STHeitiSC-Light;}
-{\colortbl;\red255\green255\blue255;}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
-
-\f0\fs24 \cf0  1 I was the shadow of the waxwing slain \
- By the false azure in the windowpane; \
+ I was the shadow of the waxwing slain 
+ By the false azure in the windowpane; 
  I was the smudge of ashen fluff - and I \
  Lived on, flew on, in the reflected sky. \
  And from the inside, too, I'd duplicate \
@@ -13,10 +7,10 @@
  Uncurtaining the night, I'd let dark glass \
  Hang all the furniture above the grass, \
  And how delightful when a fall of snow \
-10 Covered my glimpse of lawn and reached up so \
+ Covered my glimpse of lawn and reached up so \
  As to make chair and bed exactly stand \
  Upon that snow, out in that crystal land! \
- \
+
  Retake the falling snow: each drifting flake \
  Shapeless and slow, unsteady and opaque, \
  A dull dark white against the day's pale white \
@@ -24,7 +18,7 @@
  And then the gradual and dual blue \
  As night unites the viewer and the view, \
  And in the morning, diamonds of frost \
-20 Express amazement: Whose spurred feet have crossed\
+ Express amazement: Whose spurred feet have crossed\
  From left to right the blank page of the road? \
  Reading from left to right in winter's code: \
  A dot, an arrow pointing back; repeat: \
@@ -33,9 +27,9 @@
  Finding your China right behind my house. \
  Was he in Sherlock Holmes, the fellow whose \
  Tracks pointed back when he reversed his shoes? \
- \
+ 
  All colors made me happy: even gray. \
-30 My eyes were such that literally they \
+ My eyes were such that literally they \
  Took photographs. Whenever I'd permit, \
  Or, with a silent shiver, order it, \
  Whatever in my field of vision dwelt - \
@@ -45,7 +39,7 @@
  Where it would tarry for an hour or two, \
  And while this lasted all I had to do \
  Was close my eyes to reproduce the leaves, \
-40 Or indoor scene, or trophies of the eaves. \
+ Or indoor scene, or trophies of the eaves. \
  \
  I cannot understand why from the lake \
  I could make out our front porch when I'd take \
@@ -57,7 +51,7 @@
  Goldsworth and Wordsmith on its square of green. \
  \
  I had a favorite young shagbark there \
-50 With ample dark jade leaves and a black, spare, \
+ With ample dark jade leaves and a black, spare, \
  Vermiculated trunk. The setting sun \
  Bronzed the black bark, around which, like undone \
  Garlands, the shadows of the foliage fell. \
@@ -68,7 +62,7 @@
  \
  The house itself is much the same. One wing \
  We've had revamped. There's a solarium. There's \
-60 A picture window flanked with fancy chairs. \
+ A picture window flanked with fancy chairs. \
  TV's huge paperclip now shines instead \
  Of the stiff vane so often visited \
  By the na\'efve, the gauzy mockingbird \
@@ -78,7 +72,7 @@
  Come here, come herrr'; flirting her tail aloft, \
  Or gracefully indulging in a soft \
  Upward hop-flop, and instantly (to-wee!) \
-70 Returning to her perch - the new TV. \
+ Returning to her perch - the new TV. \
  \
  I was an infant when my parents died. \
  They both were ornithologists. I've tried \
@@ -90,7 +84,7 @@
  And "cancer of the pancreas" to her. \
  \
  A preterist: one who collects cold nests. \
-80 Here was my bedroom, now reserved for guests. \
+ Here was my bedroom, now reserved for guests. \
  Here, tucked away by the Canadian maid, \
  I listened to the buzz downstairs and prayed \
  For everybody to be always well, \
@@ -101,7 +95,7 @@
  A poet and a painter with a taste \
  For realistic objects interlaced \
  With grotesque growths and images of doom. \
-90 She lived to hear the next babe cry. Her room \
+ She lived to hear the next babe cry. Her room \
  We've kept intact. Its trivia create \
  A still life in her style: the paperweight \
  Of convex glass enclosing a lagoon, \
@@ -112,7 +106,7 @@
  On Chapman's Homer, thumbtacked to the door. \
  \
  My God died young. Theolatry I found \
-100 Degrading, and its premises, unsound. \
+ Degrading, and its premises, unsound. \
  No free man needs a God; but was I free? \
  How fully I felt nature glued to me \
  And how my childish palate loved the taste \
@@ -122,7 +116,7 @@
  Mauve rings around the moon; blood-orange sun \
  Twinned Iris; and that rare phenomenon \
  The iridule - when, beautiful and strange, \
-110 In a bright sky above a mountain range \
+ In a bright sky above a mountain range \
  One opal cloudlet in an oval form \
  Reflects the rainbow of a thunderstorm \
  Which in a distant valley has been staged - \
@@ -133,7 +127,7 @@
  Impenetrable! Halfway up the hill \
  I'd pause in thrall of their delirious trill. \
  That's Dr. Sutton's light. That's the Great Bear. \
-120 A thousand years ago five minutes were \
+ A thousand years ago five minutes were \
  Equal to forty ounces of fine sand. \
  Outstare the stars. Infinite foretime and \
  Infinite aftertime: above your head \
@@ -144,7 +138,7 @@
  Only when making water. Then as now \
  I walked at my own risk: whipped by the bough, \
  Tripped by the stump. Asthmatic, lame and fat, \
-130 I never bounced a ball or swung a bat. \
+ I never bounced a ball or swung a bat. \
  \
  I was the shadow of the waxwing slain \
  By feigned remoteness in the windowpane. \
@@ -157,7 +151,7 @@
  Bicycle tires. \
  \
  A thread of subtle pain, \
-140 Tugged at by playful death, released again, \
+ Tugged at by playful death, released again, \
  But always present, ran through me. One day, \
  When I'd just turned eleven, as I lay \
  Prone on the floor and watched a clockwork toy - \
@@ -168,7 +162,7 @@
  And then black night. That blackness was sublime. \
  I felt distributed through space and time: \
  One foot upon a mountaintop, one hand \
-150 Under the pebbles of a panting strand, \
+ Under the pebbles of a panting strand, \
  One ear in Italy, one eye in Spain, \
  In caves, my blood, and in the stars, my brain. \
  There were dull throbs in my Triassic; green \
@@ -179,7 +173,7 @@
  During one winter every afternoon \
  I'd sink into that momentary swoon. \
  And then it ceased. Its memory grew dim. \
-160 My health improved. I even learned to swim. \
+ My health improved. I even learned to swim. \
  But like some little lad forced by a wench \
  With his pure tongue her abject thirst to quench, \
  I was corrupted, terrified, allured, \
@@ -191,7 +185,7 @@ Canto Two \
  There was a time in my demented youth \
  When somehow I suspected that the truth \
  About survival after death was known - \
-170 To every human being: I alone \
+ To every human being: I alone \
  Knew nothing, and a great conspiracy \
  Of books and people hid the truth from me. \
  There was the day when I began to doubt \
@@ -202,7 +196,7 @@ Canto Two \
  And finally there was the sleepless night \
  When I decided to explore and fight \
  The foul, the inadmissible abyss, \
-180 Devoting all my twisted life to this \
+ Devoting all my twisted life to this \
  One task. Today I'm sixty-one. Waxwings \
  Are berry-pecking. A cicada sings. \
  \
@@ -213,7 +207,7 @@ Canto Two \
  Of certain flinching likenesses: the thumb, \
  Our grocer's son; the index, lean and glum \
  College astronomer Starover Blue; \
-190 The middle fellow, a tall priest I knew; \
+ The middle fellow, a tall priest I knew; \
  The feminine fourth finger, an old flirt; \
  And little pinky clinging to her skirt. \
  And I make mouths as I snip off the thin \
@@ -224,7 +218,7 @@ Canto Two \
  And torsion of paralysis assail \
  Her noble cheek. We moved her to Pinedale, \
  Famed for its sanitarium. There she'd sit \
-200 In the glassed sun and watch the fly that lit \
+ In the glassed sun and watch the fly that lit \
  Upon her dress and then upon her wrist. \
  Her mind kept fading in the growing mist. \
  She still could speak. She paused, and groped, and found\
@@ -235,7 +229,7 @@ Canto Two \
  To reason with the monsters in her brain. \
  \
  What moment in the gradual decay \
-210 Does resurrection choose? What years? What day? \
+ Does resurrection choose? What years? What day? \
  Who has the stopwatch? Who rewinds the tape? \
  Are some less lucky, or do all escape? \
  A syllogism: other men die; but I\
@@ -245,7 +239,7 @@ Canto Two \
  Locked up. Yet, if prior to life we had \
  Been able to imagine life, what mad, \
  Impossible, unutterably weird, \
-220 Wonderful nonsense it might have appeared! \
+ Wonderful nonsense it might have appeared! \
  \
  So why join in the vulgar laughter? Why \
  Scorn a hereafter none can verify: \
@@ -256,7 +250,7 @@ Canto Two \
  It isn't that we dream too wild a dream: \
  The trouble is we do not make it seem \
  Sufficiently unlikely; for the most \
-230 We can think up is a domestic ghost. \
+ We can think up is a domestic ghost. \
  \
  How ludicrous these efforts to translate \
  Into one's private tongue a public fate! \
@@ -269,7 +263,7 @@ Canto Two \
  As we were walking home the day she died, \
  An empty emerald case, squat and frog-eyed, \
  Hugging the trunk; and its companion piece, \
-240 A gum-logged ant. \
+ A gum-logged ant. \
  That Englishman in Nice, \
  A proud and happy linguist: je nourris\
  Les pauvres cigales - meaning that he \
@@ -283,7 +277,7 @@ Canto Two \
  Sybil, throughout our high-school days I knew \
  Your loveliness, but fell in love with you \
  During an outing of the senior class \
-250 To New Wye Falls. We luncheoned on damp grass. \
+ To New Wye Falls. We luncheoned on damp grass. \
  Our teacher of geology discussed \
  The cataract. Its roar and rainbow dust \
  Made the tame park romantic. I reclined \
@@ -293,7 +287,7 @@ Canto Two \
  Between a star of trillium and a stone, \
  Pressed on the turf. A little phalange bone \
  Kept twitching. Then you turned and offered me \
-260 A thimbleful of bright metallic tea. \
+ A thimbleful of bright metallic tea. \
  \
  Your profile has not changed. The glistening teeth \
  Biting the careful lip; the shade beneath \
@@ -305,7 +299,7 @@ Canto Two \
  And on still nights we hear the waterfall. \
  \
  Come and be worshiped, come and be caressed, \
-270 My dark Vanessa, crimson-barred, my blest \
+ My dark Vanessa, crimson-barred, my blest \
  My Admirable butterfly! Explain \
  How could you, in the gloam of Lilac Lane, \
  Have let uncouth, hysterical John Shade \
@@ -316,7 +310,7 @@ Canto Two \
  By our two heads. Four hundred thousand times \
  The tall clock with the hoarse Westminster chimes \
  Has marked our common hour. How many more \
-280 Free calendars shall grace the kitchen door? \
+ Free calendars shall grace the kitchen door? \
  \
  I love you when you're standing on the lawn \
  Peering at something in a tree: "It's gone. \
@@ -327,7 +321,7 @@ Canto Two \
  I love you when you're humming as you pack \
  A suitcase or the farcical car sack \
  With round-trip zipper. And I love you most \
-290 When with a pensive nod you greet her ghost \
+ When with a pensive nod you greet her ghost \
  And hold her first toy on your palm, or look \
  At a postcard from her, found in a book. \
  \
@@ -338,7 +332,7 @@ Canto Two \
  (The family oculist) will cure that slight \
  Squint in no time." And later. "She'll be quite \
  Pretty, you know"; and, trying to assuage \
-300 The swelling torment: "That's the awkward age." \
+ The swelling torment: "That's the awkward age." \
  "She should take riding lessons," you would say \
  (Your eyes and mine not meeting). "She should play \
  Tennis, or badminton. Less starch, more fruit! \
@@ -349,7 +343,7 @@ Canto Two \
  At Christmas parties games were rough, no doubt, \
  And one shy little guest might be left out; \
  But let's be fair: while children of her age \
-310 Were cast as elves and fairies on the stage \
+ Were cast as elves and fairies on the stage \
  That she'd helped paint for the school pantomime, \
  My gentle girl appeared as Mother Time, \
  A bent charwoman with slop pail and broom, \
@@ -360,7 +354,7 @@ Canto Two \
  Summer was power-mowed, and autumn, burned. \
  Alas, the dingy cygnet never turned \
  Into a wood duck. And again your voice: \
-320 "But this is prejudice! You should rejoice \
+ "But this is prejudice! You should rejoice \
  That she is innocent. Why overstress \
  The physical? She wants to look a mess. \
  Virgins have written some resplendent books. \
@@ -381,7 +375,7 @@ Canto Two \
  And she returned in tears, with new defeats, \
  New miseries. On days when all the streets \
  Of College Town led to the game, she'd sit \
-340 On the library steps, and read or knit; \
+ On the library steps, and read or knit; \
  Mostly alone she'd be, or with that nice \
  Frail roommate, now a nun; and, once or twice, \
  With a Korean boy who took my course. \
@@ -391,7 +385,7 @@ Canto Two \
  In an old barn. She twisted words: pot, top, \
  Spider, redips. And "powder" was "red wop." \
  She called you a didactic katydid. \
-350 She hardly ever smiled, and when she did, \
+ She hardly ever smiled, and when she did, \
  It was a sign of pain. She'd criticize \
  Ferociously our projects, and with eyes \
  Expressionless sit on her tumbled bed \
@@ -402,7 +396,7 @@ Canto Two \
  She was my darling. difficult, morose - \
  But still my darling. You remember those \
  Almost unruffled evenings when we played \
-360 Mah-jongg, or she tried on your furs, which made \
+ Mah-jongg, or she tried on your furs, which made \
  Her almost fetching; and the mirrors smiled, \
  The lights were merciful, the shadows mild, \
  Sometimes I'd help her with a Latin text, \
@@ -410,7 +404,7 @@ Canto Two \
  To my fluorescent lair, and you would be \
  In your own study, twice removed from me, \
  And I would hear both voices now and then: \
-370 "Mother, what's grimpen?" "What is what?" \
+ "Mother, what's grimpen?" "What is what?" \
  "Grim Pen." \
  Pause, and your guarded scholium. Then again: \
  "Mother, what's chtonic?" That, too, you'd explain, \
@@ -424,7 +418,7 @@ Canto Two \
  In English Lit to be a document \
  "Engazhay and compelling" - what this meant \
  Nobody cared); the point is that the three \
-380 Chambers, then bound by you and her and me, \
+ Chambers, then bound by you and her and me, \
  Now form a tryptich or a three-act play \
  In which portrayed events forever stay. \
  \
@@ -436,7 +430,7 @@ Canto Two \
  Would then take all of them in his new car \
  A score of miles to a Hawaiian bar. \
  The boy was picked up at a quarter past \
-390 Eight in New Wye. Sleet glazed the roads. At last \
+ Eight in New Wye. Sleet glazed the roads. At last \
  They found the place - when suddenly Pete Dean \
  Clutching his brow exclaimed that he had clean \
  Forgotten an appointment with a chum \
@@ -446,7 +440,7 @@ Canto Two \
  Before the azure entrance for awhile. \
  Puddles were neon-barred; and with a smile \
  She said she'd be de trop, she'd much prefer \
-400 Just going home. Her friends escorted her \
+ Just going home. Her friends escorted her \
  To the bus stop and left; but she, instead \
  Of riding home, got off at Lochanhead. \
  \
@@ -459,7 +453,7 @@ Canto Two \
 \
  A male hand traced from Florida to Maine \
  The curving arrows of Aeolian wars. \
-410 You said that later a quartet of bores, \
+ You said that later a quartet of bores, \
  Two writers and two critics, would debate \
  The Cause of Poetry on Channel 8. \
  A nymph came pirouetting, under white \
@@ -469,7 +463,7 @@ Canto Two \
  I went upstairs and read a galley proof, \
  And heard the wind roll marbles on the roof. \
  "See the blind beggar dance, the cripple sing"\
-420 Has unmistakably the vulgar ring \
+ Has unmistakably the vulgar ring \
  Of its preposterous age. Then came your call, \
  My tender mockingbird, up from the hall. \
  I was in time to overhear brief fame \
@@ -481,7 +475,7 @@ Canto Two \
  If I don't come by midnight with the dough -"\
  \
  And then there was a kind of travelog: \
-430 A host narrator took us through the fog \
+ A host narrator took us through the fog \
  Of a March night, where headlights from afar \
  Approached and grew like a dilating star, \
  To the green, indigo and tawny, sea \
@@ -491,7 +485,7 @@ Canto Two \
  That first long ramble, the relentless light, \
  The flock of sails (one blue among the white \
  Clashed queerly with the sea, and two were red), \
-440 The man in the old blazer, crumbing bread, \
+ The man in the old blazer, crumbing bread, \
  The crowding gulls insufferably loud, \
  And one dark pigeon waddling in the crowd. \
  "Was that the phone?" You listened at the door. \
@@ -501,7 +495,7 @@ Canto Two \
  \
  "Are we quite sure she's acting right?" you asked. \
  "It's technically a blind date, of course. \
-450 Well, shall we try the preview of Remorse?" \
+ Well, shall we try the preview of Remorse?" \
  And we allowed, in all tranquillity, \
  The famous film to spread its charmed marquee; \
  The famous face flowed in, fair and inane: \
@@ -512,7 +506,7 @@ Canto Two \
  "I think," she said,\
  "I'll get off here." "It's only Lochanhead."\
  "Yes, that's okay." Gripping the stang, she peered\
-460 At ghostly trees. Bus stopped. Bus disappeared.\
+ At ghostly trees. Bus stopped. Bus disappeared.\
  \
  Thunder above the Jungle. "No, not that!" \
  Pat Pink, our guest (antiatomic chat). \
@@ -523,7 +517,7 @@ Canto Two \
  An open mouth in midsong was struck out. \
  An imbecile with sideburns was about \
  To use his gun, but you were much too quick. \
-470 A jovial Negro raised his trumpet. Trk. \
+ A jovial Negro raised his trumpet. Trk. \
  Your ruby ring made life and laid the law. \
  Oh, switch it off! And as life snapped we saw \
  A pinhead light dwindle and die in black \
@@ -535,7 +529,7 @@ Canto Two \
  \
  You gently yawned and stacked away your plate. \
  We heard the wind. We heard it rush and throw \
-480 Twigs at the windowpane. Phone ringing? No. \
+ Twigs at the windowpane. Phone ringing? No. \
  I helped you with the dishes. The tall clock \
  Kept on demolishing young root, old rock. \
  \
@@ -547,7 +541,7 @@ Canto Two \
  \
  People have thought she tried to cross the lake \
  At Lochan Neck where zesty skaters crossed \
-490 From Exe to Wye on days of special frost. \
+ From Exe to Wye on days of special frost. \
  Others supposed she might have lost her way \
  By turning left from Bridgeroad; and some say \
  She took her poor young life. I know. You know. \
@@ -558,7 +552,7 @@ Canto Two \
  In the wet starlight and on the wet ground. \
  The lake lay in the mist, its ice half drowned. \
  A blurry shape stepped off the reedy bank \
-500 Into a crackling, gulping swamp, and sank. \
+ Into a crackling, gulping swamp, and sank. \
 Canto Three \
  \
  L'if, lifeless tree! Your great Maybe, Rabelais: \
@@ -572,7 +566,7 @@ Canto Three \
  You and I, \
  And she, then a mere tot, moved from New Wye \
  To Yewshade, in another, higher state. \
-510 I love great mountains. From the iron gate \
+ I love great mountains. From the iron gate \
  Of the ramshackle house we rented there \
  One saw a snowy form, so far, so fair, \
  That one could only fetch a sigh, as if \
@@ -583,7 +577,7 @@ Canto Three \
  It missed the gist of the whole thing; it missed \
  What mostly interests the preterist; \
  For we die every day; oblivion thrives \
-520 Not on dry thighbones but on blood-ripe lives, \
+ Not on dry thighbones but on blood-ripe lives, \
  And our best yesterdays are now foul piles \
  Of crumpled names, phone numbers and foxed files.\
  I'm ready to become a floweret \
@@ -593,7 +587,7 @@ Canto Three \
  Of mortal life; the passion and the pain; \
  The claret taillight of that dwindling plane \
  Off Hesperus; your gesture of dismay \
-530 On running out of cigarettes; the way \
+ On running out of cigarettes; the way \
  You smile at dogs; the trail of silver slime \
  Snails leave on flagstones; this good ink, this rhyme,\
  This index card, this slender rubber band \
@@ -605,7 +599,7 @@ Canto Three \
  Not to expect too much of paradise: \
  What if there's nobody to say hullo \
  To the newcomer, no reception, no \
-540 Indoctrination? What if you are tossed \
+ Indoctrination? What if you are tossed \
  Into a boundless void, your bearings lost, \
  Your spirit stripped and utterly alone, \
  Your task unfinished, your despair unknown, \
@@ -615,7 +609,7 @@ Canto Three \
  Herself a blur in your dissolving head! \
  \
  While snubbing gods, including the big G, \
-550 Iph borrowed some peripheral debris \
+ Iph borrowed some peripheral debris \
  From mystic visions; and it offered tips \
  (The amber spectacles for life's eclipse) - \
  How not to panic when you're made a ghost:, \
@@ -625,7 +619,7 @@ Canto Three \
  How to locate in blackness, with a gasp, \
  Terra the Fair, an orbicle of jasp. \
  How to keep sane in spiral types of space. \
-560 Precautions to be taken in the case \
+ Precautions to be taken in the case \
  Of freak reincarnation: what to do \
  On suddenly discovering that you \
  Are now a young and vulnerable toad \
@@ -636,7 +630,7 @@ Canto Three \
  Time means succession, and succession, change: \
  Hence timelessness is bound to disarrange \
  Schedules of sentiment. We give advice \
-570 To widower. He has been married twice: \
+ To widower. He has been married twice: \
  He meets his wives; both loved, both loving, both \
  Jealous of one another. Time means growth. \
  And growth means nothing in Elysian life. \
@@ -646,7 +640,7 @@ Canto Three \
  But with a touch of tawny in the shade, \
  Feet up, knees clasped, on a stone balustrade \
  The other sits and raises a moist gaze \
-580 Toward the blue impenetrable haze. \
+ Toward the blue impenetrable haze. \
  How to begin? Which first to kiss? What toy \
  To give the babe? Does that small solemn boy \
  Know of the head-on crash which on a wild \
@@ -657,7 +651,7 @@ Canto Three \
  And why does she avert her fierce young face? \
  \
  For as we know from dreams it is so hard \
-590 To speak to our dear dead! They disregard \
+ To speak to our dear dead! They disregard \
  Our apprehension, queaziness and shame - \
  The awful sense that they're not quite the same. \
  And our school chum killed in a distant war \
@@ -668,7 +662,7 @@ Canto Three \
  But who can teach the thoughts we should roll-call \
  When morning finds us marching to the wall \
  Under the stage direction of some goon \
-600 Political, some uniformed baboon? \
+ Political, some uniformed baboon? \
  We'll think of matters only known to us - \
  Empires of rhyme, Indies of calculus; \
  Listen to distant cocks crow, and discern \
@@ -679,7 +673,7 @@ Canto Three \
  Into their eyes just for the fun of it. \
  \
  Nor can one help the exile, the old man \
-610 Dying in a motel, with the loud fan \
+ Dying in a motel, with the loud fan \
  Revolving in the torrid prairie night \
  And, from the outside, bits of colored light \
  Reaching his bed like dark hands from the past \
@@ -690,7 +684,7 @@ Canto Three \
  Maybe one finds le grand n\'e9ant; maybe \
  Again one spirals from the tuber's eye. \
  \
-620 As you remarked the last time we went by \
+ As you remarked the last time we went by \
  The Institute: "I really could not tell \
  The differences between this place and Hell." \
  \
@@ -701,7 +695,7 @@ Canto Three \
  The great Starover Blue reviewed the role \
  Planets had played as landfalls of the soul. \
  The fate of beasts was pondered. A Chinese \
-630 Discanted on the etiquette at teas \
+ Discanted on the etiquette at teas \
  With ancestors, and how far up to go. \
  I tore apart the fantasies of Poe, \
  And dealt with childhood memories of strange \
@@ -712,7 +706,7 @@ Canto Three \
  \
  In later years it started to decline: \
  Buddhism took root. A medium smuggled in \
-640 Pale jellies and a floating mandolin. \
+ Pale jellies and a floating mandolin. \
  Fra Karamazov, mumbling his inept \
  All is allowed, into some classes crept; \
  And to fulfill the fish wish of the womb, \
@@ -723,7 +717,7 @@ Canto Three \
  Of death's abyss. And when we lost our child \
  I knew there would be nothing: no self-styled \
  Spirit would touch a keyboard of dry wood \
-650 To rap out her pet name; no phantom would \
+ To rap out her pet name; no phantom would \
  Rise gracefully to welcome you and me \
  In the dark garden, near the shagbark tree. \
  \
@@ -737,7 +731,7 @@ Canto Three \
  "It is a tendril fingering the pane." \
  \
  "What glided down the roof and made that thud?" \
-660 "It is old winter tumbling in the mud." \
+ "It is old winter tumbling in the mud." \
  \
  "And now what shall I do? My knight is pinned." \
  \
@@ -750,7 +744,7 @@ Canto Three \
  Did life, the woolly caterpillar run. \
  We went to Italy. Sprawled in the sun. \
  On a white beach with other pink or brown \
-670 Americans. Flew back to our small town. \
+ Americans. Flew back to our small town. \
  Found that my bunch of essays The Untamed\
  Seahorse was "universally acclaimed" \
  (It sold three hundred copies in one year). \
@@ -760,7 +754,7 @@ Canto Three \
  Of college education. You went on \
  Translating into French Marvell and Donne. \
  It was a year of Tempests: Hurricane \
-680 Lolita Swept from Florida to Maine. \
+ Lolita Swept from Florida to Maine. \
  Mars glowed. Shahs married. Gloomy Russians spied.\
  Lang made your portrait. And one night I died. \
  \
@@ -771,7 +765,7 @@ Canto Three \
  The so-called "question period" at the end, \
  One of those peevish people who attend \
  Such talks only to say they disagree \
-690 Stood up and pointed with his pipe at me. \
+ Stood up and pointed with his pipe at me. \
  \
  And then it happened - the attack, the trance, \
  Or one of my old fits. There sat by chance \
@@ -784,7 +778,7 @@ Canto Three \
  \
  I can't tell you how \
  I knew - but I did know that I had crossed \
-700 The border. Everything I loved was lost \
+ The border. Everything I loved was lost \
  But no aorta could report regret. \
  A sun of rubber was convulsed and set; \
  And blood-black nothingness began to spin \
@@ -795,7 +789,7 @@ Canto Three \
  \
  I realized, of course, that it was made \
  Not of our atoms; that the sense behind\
-710 The scene was not our sense. In life, the mind \
+ The scene was not our sense. In life, the mind \
  Of any man is quick to recognize \
  Natural shams, and then before his eyes \
  The reed becomes a bird, the knobby twig \
@@ -806,7 +800,7 @@ Canto Three \
  Could be grasped only by whoever dwelt \
  In the strange world where I was a mere stray. \
  \
-720 And presently I saw it melt away: \
+ And presently I saw it melt away: \
  Though still unconscious I was back on earth. \
  The tale I told provoked my doctor's mirth. \
  He doubted very much that in the state \
@@ -819,7 +813,7 @@ Canto Three \
  \
  However, I demurred. In mind I kept \
  Replaying the whole thing. Again I stepped \
-730 Down from the platform, and felt strange and hot, \
+ Down from the platform, and felt strange and hot, \
  And saw that chap stand up, and toppled, not \
  Because a heckler pointed with his pipe, \
  But probably because the time was ripe \
@@ -829,7 +823,7 @@ Canto Three \
  My vision reeked with truth. It had the tone, \
  The quiddity and quaintness of its own \
  Reality. It was. As time went on. \
-740 Its constant vertical in triumph shone. \
+ Its constant vertical in triumph shone. \
  Often when troubled by the outer glare \
  Of street and strife, inward I'd turn, and there, \
  There in the background of my soul it stood, \
@@ -840,7 +834,7 @@ Canto Three \
  It was a story in a magazine \
  About a Mrs. Z. whose heart had been \
  Rubbed back to life by a prompt surgeon's hand. \
-750 She told her interviewer of "The Land \
+ She told her interviewer of "The Land \
  Beyond the Veil" and the account contained \
  A hint of angels, and a glint of stained \
  Windows, and some soft music, and a choice \
@@ -851,7 +845,7 @@ Canto Three \
  I glimpsed a tall white fountain - and awoke." \
  \
  If on some nameless island Captain Schmidt \
-760 Sees a new animal and captures it, \
+ Sees a new animal and captures it, \
  And if, a little later, Captain Smith \
  Brings back a skin, that island is no myth. \
  Our fountain was a signpost and a mark \
@@ -862,7 +856,7 @@ Canto Three \
  The article was by Jim Coates. To Jim \
  Forthwith I wrote. Got her address from him. \
  Drove west three hundred miles to talk to her. \
-770 Arrived. Was met by an impassioned purr. \
+ Arrived. Was met by an impassioned purr. \
  Saw that blue hair, those freckled hands, that rapt \
  Orchideous air - and knew that I was trapped. \
  \
@@ -873,7 +867,7 @@ Canto Three \
  "Perhaps some other time." The journalist \
  Still had her scribblings. I should not insist. \
  She plied me with fruit cake, turning it all \
-780 Into an idiotic social call. \
+ Into an idiotic social call. \
  "I can't believe," she said, "that it is you!\
  I loved your poem in the Blue Review. \
  That one about Mon Blon. I have a niece \
@@ -884,7 +878,7 @@ Canto Three \
  She was. I might have persevered. I might \
  Have made her tell me more about the white \
  Fountain we both had seen "beyond the veil" \
-790 But if (I thought) I mentioned that detail \
+ But if (I thought) I mentioned that detail \
  She'd pounce upon it. as upon a fond \
  Affinity, a sacramental bond, \
  Uniting mystically her and me, \
@@ -895,7 +889,7 @@ Canto Three \
  I also called on Coates. \
  He was afraid he had mislaid her notes. \
  He took his article from a steel file: - \
-800 "It's accurate. I have not changed her style. \
+ "It's accurate. I have not changed her style. \
  There's one misprint - not that it matters much: \
  Mountain, not fountain. The majestic touch." \
  \
@@ -906,7 +900,7 @@ Canto Three \
  Was the real point, the contrapuntal theme; \
  Just this: not text, but texture; not the dream \
  But a topsy-turvical coincidence, \
-810 Not flimsy nonsense, but a web of sense. \
+ Not flimsy nonsense, but a web of sense. \
  Yes! It sufficed that I in life could find \
  Some kind of link-and-bobolink, some kind \
  Of correlated pattern in the game, \
@@ -917,7 +911,7 @@ Canto Three \
  No furtive light came from their involute \
  Abode, but there they were, aloof and mute, \
  Playing a game of worlds, promoting pawns \
-820 To ivory unicorns and ebon fauns; \
+ To ivory unicorns and ebon fauns; \
  Kindling a long life here, extinguishing \
  A short one there; killing a Balkan king; \
  Causing a chunk of ice formed on a high- \
@@ -928,7 +922,7 @@ Canto Three \
  And vanished objects. Making ornaments \
  Of accidents and possibilities. \
  \
-830 Stormcoated, I strode in: Sybil, it is \
+ Stormcoated, I strode in: Sybil, it is \
  My firm conviction - "Darling, shut the door. \
  Had a nice trip?" Splendid - but what is more \
  I have returned convinced that I can grope \
@@ -940,20 +934,19 @@ Canto Four \
  None has cried out. Now I shall try what none \
  Has tried. Now I shall do what none has done. \
  And speaking of this wonderful machine: \
-840 I'm puzzled by the difference between \
+ I'm puzzled by the difference between \
  Two methods of composing: A, the kind \
  Which goes on solely in the poet's mind, \
  A testing of performing words, while he \
  Is soaping a third time one leg, and B, \
- The other kind, much more decorous, when http://www.en8848.com.cn/
-\f1 \'a1\'ba\'d4\'ad\'b0\'e6\'d3\'a2\'d3\'ef\'a1\'bb
-\f0 \
+ The other kind, much more decorous, when 
+
  He's in his study writing with a pen. \
  \
  In method B the hand supports the thought, \
  The abstract battle is concretely fought. \
  The pen stops in mid-air, then swoops to bar \
-850 A canceled sunset or restore a star, \
+ A canceled sunset or restore a star, \
  And thus it physically guides the phrase \
  Toward faint daylight through the inky maze. \
  \
@@ -964,7 +957,7 @@ Canto Four \
  Can interrupt, while the automaton \
  Is taking off what he has just put on \
  Or walking briskly to the corner store \
-860 To buy the paper he has read before. \
+ To buy the paper he has read before. \
  \
  Why is it so? Is it, perhaps, because \
  In penless work there is no pen-poised pause \
@@ -972,12 +965,10 @@ Canto Four \
  Having to choose the necessary rhyme, \
  Hold the completed line before one's eyes, \
  And keep in mind all the preceding tries? \
- Or is the process deeper with no desk http://www.en8848.com.cn/
-\f1 \'a1\'ba\'d4\'ad\'b0\'e6\'d3\'a2\'d3\'ef\'a1\'bb
-\f0 \
+ Or is the process deeper with no desk 
  To prop the false and hoist the poetesque? \
  For there are those mysterious moments when \
-870 Too weary to delete, I drop my pen; \
+ Too weary to delete, I drop my pen; \
  I ambulate - and by some mute command \
  The right word flutes and perches on my hand. \
  \
@@ -988,7 +979,7 @@ Canto Four \
  And caught up with myself - upon the lawn \
  Where clover leaves cupped the topaz of dawn, \
  And where Shade stood in nightshirt and one shoe. \
-880 And then I realized that this half too \
+ And then I realized that this half too \
  Was fast asleep; both laughed and I awoke \
  Safe in my bed as day its eggshell broke, \
  And robins walked and stopped, and on the damp \
@@ -998,10 +989,8 @@ Canto Four \
  Since my biographer may be too staid \
  Or know too little to affirm that Shade \
  Shaved in his bath, here goes: \
- "He'd fixed a sort http://www.en8848.com.cn/
-\f1 \'a1\'ba\'d4\'ad\'b0\'e6\'d3\'a2\'d3\'ef\'a1\'bb
-\f0 \
-890 Of hinge-and-screw affair, a steel support \
+ "He'd fixed a sort 
+ Of hinge-and-screw affair, a steel support \
  Running across the tub to hold in place \
  The shaving mirror right before his face \
  And with his toe renewing tap-warmth, he'd \
@@ -1012,7 +1001,7 @@ Canto Four \
  Thus near the mouth: the space between its wick \
  And my grimace, invites the wicked nick. \
  Or this dewlap: some day I must set free \
-900 The Newport Frill inveterate in me. \
+ The Newport Frill inveterate in me. \
  My Adam's apple is a prickly pear: \
  Now I shall speak of evil and despair\
  As none has spoken. Five, six, seven, eight, \
@@ -1023,11 +1012,9 @@ Canto Four \
  I have my doubts about the one-armed bloke \
  Who in commercials with one gliding stroke \
  Clears a smooth path of flesh from ear to chin, \
-910 Then wipes his face and fondly tries his skin. \
+ Then wipes his face and fondly tries his skin. \
  I'm in the class of fussy bimanists. \
- As a discreet ephebe in tights assists http://www.en8848.com.cn/
-\f1 \'a1\'ba\'d4\'ad\'b0\'e6\'d3\'a2\'d3\'ef\'a1\'bb
-\f0 \
+ As a discreet ephebe in tights assists 
  A female in an acrobatic dance, \
  My left hand helps, and holds, and shifts its stance. \
  \
@@ -1036,7 +1023,7 @@ Canto Four \
  When inspiration and its icy blaze, \
  The sudden image, the immediate phrase \
  Over the skin a triple ripple send \
-920 Making the little hairs all stand on end \
+ Making the little hairs all stand on end \
  As in the enlarged animated scheme \
  Of whiskers mowed when held up by Our Cream. \
  \
@@ -1047,7 +1034,7 @@ Canto Four \
  Primitivist folk-masks; progressive schools; \
  Music in supermarkets; swimming pools; \
  Brutes, bores, class-conscious Philistines, Freud, Marx,\
-930 Fake thinkers, puffed-up poets, frauds and sharks. \
+ Fake thinkers, puffed-up poets, frauds and sharks. \
  \
  And while the safety blade with scrape and screak \
  Travels across the country of my cheek; \
@@ -1057,71 +1044,71 @@ Canto Four \
  Sunglassers tour Beirut, and now I plough \
  Old Zembla's fields where my gay stubble grows, \
  And slaves make hay between my mouth and nose. \
- \
- Man's life as commentary to abstruse\
-940 Unfinished poem. Note for further use. \
- \
- Dressing in all the rooms, I rhyme and roam \
- Throughout the house with, in my fist, a comb \
- Or a shoehorn, which turns into the spoon \
- I eat my egg with. In the afternoon \
- You drive me to the library. We dine \
- At half past six. And that odd muse of mine, \
- My versipel, is with me everywhere, \
- In carrel and in car, and in my chair. \
- \
- And all the time, and all the time, my love, \
-950 You too are there, beneath the word, above \
- The syllable, to underscore and stress \
- The vital rhythm. One heard a woman's dress \
- Rustle in days of yore. I've often caught \
- The sound and sense of your approaching thought. \
- And all in you is youth, and you make new, \
- By quoting them, old things I made for you. \
- \
- Dim Gulf was my first book (free verse); Night Rote\
- Came next; then Hebe's Cup, my final float \
- In that damp carnival, for now I term \
-960 Everything "Poems," and no longer squirm. \
- (But this transparent thingum does require \
- Some moondrop title. Help me, Will! Pale Fire.) \
- \
- Gently the day has passed in a sustained \
- Low hum of harmony. The brain is drained \
- And a brown ament, and the noun I meant \
- To use but did not, dry on the cement. \
- Maybe my sensual love for the consonne\
- D'appui, Echo's fey child, is based upon \
- A feeling of fantastically planned, \
-970 Richly rhymed life. \
- I feel I understand \
- Existence, or at least a minute part \
- Of my existence, only through my art, \
- In terms of combinational delight; \
- And if my private universe scans right, \
- So does the verse of galaxies divine \
- Which I suspect is an iambic line. \
- I'm reasonably sure that we survive \
- And that my darling somewhere is alive, \
- As I am reasonably sure that I \
-980 Shall wake at six tomorrow, on July \
- The twenty-second, nineteen fifty-nine, \
- And that the day will probably be fine; \
- So this alarm clock let me set myself, \
- Yawn, and put back Shade's "Poems" on their shelf. \
- \
- But it's not bedtime yet. The sun attains \
- Old Dr. Sutton's last two windowpanes. \
- The man must be - what? Eighty? Eighty-two? \
- Was twice my age the year I married you. \
- Where are you? In the garden. I can see \
-990 Part of your shadow near the shagbark tree. \
- Somewhere horseshoes are being tossed. Click, Clunk.\
- (Leaning against its lamppost like a drunk.) \
- A dark Vanessa with crimson band \
- Wheels in the low sun, settles on the sand \
- And shows its ink-blue wingtips flecked with white. \
- And through the flowing shade and ebbing light \
- A man, unheedful of the butterfly - \
- Some neighbor's gardener, I guess - goes by \
- Trundling an empty barrow up the lane. }
+ 
+ Man's life as commentary to abstruse
+ Unfinished poem. Note for further use. 
+ 
+ Dressing in all the rooms, I rhyme and roam 
+ Throughout the house with, in my fist, a comb 
+ Or a shoehorn, which turns into the spoon 
+ I eat my egg with. In the afternoon 
+ You drive me to the library. We dine 
+ At half past six. And that odd muse of mine, 
+ My versipel, is with me everywhere, 
+ In carrel and in car, and in my chair. 
+ 
+ And all the time, and all the time, my love, 
+ You too are there, beneath the word, above
+ The syllable, to underscore and stress 
+ The vital rhythm. One heard a woman's dress
+ Rustle in days of yore. I've often caught 
+ The sound and sense of your approaching thought. 
+ And all in you is youth, and you make new, 
+ By quoting them, old things I made for you. 
+ 
+ Dim Gulf was my first book (free verse); Night Rote
+ Came next; then Hebe's Cup, my final float 
+ In that damp carnival, for now I term 
+ Everything "Poems," and no longer squirm. 
+ (But this transparent thingum does require 
+ Some moondrop title. Help me, Will! Pale Fire.) 
+ 
+ Gently the day has passed in a sustained 
+ Low hum of harmony. The brain is drained 
+ And a brown ament, and the noun I meant 
+ To use but did not, dry on the cement. 
+ Maybe my sensual love for the consonne
+ D'appui, Echo's fey child, is based upon 
+ A feeling of fantastically planned, 
+ Richly rhymed life.
+ I feel I understand 
+ Existence, or at least a minute part 
+ Of my existence, only through my art, 
+ In terms of combinational delight; 
+ And if my private universe scans right, 
+ So does the verse of galaxies divine 
+ Which I suspect is an iambic line. 
+ I'm reasonably sure that we survive 
+ And that my darling somewhere is alive, 
+ As I am reasonably sure that I 
+ Shall wake at six tomorrow, on July 
+ The twenty-second, nineteen fifty-nine, 
+ And that the day will probably be fine; 
+ So this alarm clock let me set myself, 
+ Yawn, and put back Shade's "Poems" on their shelf. 
+ 
+ But it's not bedtime yet. The sun attains 
+ Old Dr. Sutton's last two windowpanes. 
+ The man must be - what? Eighty? Eighty-two? 
+ Was twice my age the year I married you. 
+ Where are you? In the garden. I can see 
+ Part of your shadow near the shagbark tree. 
+ Somewhere horseshoes are being tossed. Click, Clunk.
+ (Leaning against its lamppost like a drunk.) 
+ A dark Vanessa with crimson band 
+ Wheels in the low sun, settles on the sand 
+ And shows its ink-blue wingtips flecked with white. 
+ And through the flowing shade and ebbing light 
+ A man, unheedful of the butterfly - 
+ Some neighbor's gardener, I guess - goes by 
+ Trundling an empty barrow up the lane. 
