@@ -174,15 +174,16 @@ def firstWords(ngrams):
 def markov(ngrams, lineLength, lines, n_probabilities=[0.5,0.5]):
   chain = firstWords(ngrams)
   currentLineLength = len(chain)
-  poem = chain
+  poem = chain[:]
 
   # for each line
   while lines > 0:
     # for each word in line
     while currentLineLength < lineLength:
       n = sample(n_probabilities)+2 
-      chain += sampleNgrams(n, chain, ngrams)
-      poem += chain[-1]
+      nextWord = sampleNgrams(n, chain, ngrams)
+      poem += nextWord
+      chain += nextWord
       currentLineLength += 1
 
     poem += [" <br> "]
@@ -220,16 +221,6 @@ def generatePoem(corpus):
 def main():
   corpus = 'corpus/poe.txt'
   print generatePoem(corpus)
-
-# def main():
-
-#   corpus = wordsFromCorpus('alice_in_wonderland.txt')
-
-#   ngrams = nestedDictToTuples(ngramsFromCorpus(corpus, 3))
-
-#   chain = markov(ngrams, 1000, [0.3,0.7])
-#   line = ' '.join(chain)
-#   print line
 
 if __name__ == '__main__':
   main()
