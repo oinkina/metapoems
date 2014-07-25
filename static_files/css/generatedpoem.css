@@ -4,13 +4,13 @@ body {
   background-size: cover;
 }
 
-@font-face {
+/*@font-face {
   font-family: laine;
   src: url(/fonts/laine.TTF);
   font-size:100%;
   font-stretch:expanded;
 }
-
+*/
 h3 {
     text-align: center;
 }
@@ -21,7 +21,8 @@ h3 {
     width: 70%;
     text-align: center;
     margin: auto;
-    border: solid 1px black;    
+    padding-bottom: 20px; 
+/*    border: solid 1px black;   */ 
 }
 
 .middle {
@@ -29,15 +30,15 @@ h3 {
 }
     
 .poem {
-  font-family: laine;
-  font-size: 50px;
+  font-family: 'EB Garamond', serif;
+  font-size: 36px;
   margin-bottom: 50px;
   padding-top: 0px;
   margin-top: 20px;
 }
 
 .metapoets {
-  border: black 1px solid;
+  /*border: black 1px solid;*/
   background-color: #fff ;
   opacity: .7;
   margin: auto;
@@ -47,7 +48,7 @@ h3 {
 } 
 
 .bottombar {
-  border: black 1px solid;
+  /*border: black 1px solid;*/
   background-color: #fff;
   opacity: .7;
 }
