@@ -208,19 +208,18 @@ def markov(ngrams, lineLength, lines, n_probabilities=[0.5,0.5]):
 # rhyming
 
 
-def generatePoem(corpus):
+def generatePoem(corpus, lineLength=5, lines=20):
   corp = wordsFromCorpus(corpus)
   ngrams = nestedDictToTuples(ngramsFromCorpus(corp, 4))
-  poem = markov(ngrams, 5, 14, [0.1,0.7,0.2])
+  poem = markov(ngrams, lineLength, lines, [0.1,0.7,0.2])
   return ' '.join(poem)
-
 
 
 
 
 def main():
   corpus = 'corpus/poe.txt'
-  print generatePoem(corpus)
+  print generatePoem(corpus, 2, 25)
 
 if __name__ == '__main__':
   main()
