@@ -5,6 +5,16 @@
 <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
 
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+
+<script>
+
+$(document).ready(function() {
+    $('#header').hide().show("drop", "slow")
+})
+</script>
+
+
 
 <body>
 <div id="header"> <h1>Metapoems</h1></div>
@@ -17,9 +27,6 @@
   </div>
 </div> -->
 
-<div> 
-<fb:login-button scope="public_profile,email,user_status" onlogin="checkLoginState();">
-</fb:login-button> </div>
 
 <div id="background">
   <div id="paper">
@@ -34,16 +41,19 @@
                 <div class="outer">
                     <div class="image">
                         <a id="lewis" href="/poem?link=lewiscaroll"><img class="apic" src="img/lewiscaroll.jpg"</a>
+                        <span class="authorname"><h2>Lewis Caroll</h2></span>
                     </div>
                 </div>
                 <div class="outer">
                     <div class="image">
                         <a id="nabokov" href="/poem?link=nabokov"><img class="apic" src="img/Vladimir-Nabokov.jpg"</a>
+                        <span class="authorname"><h2>Vladmir Nabokov</h2></span>
                     </div>
                 </div>
                 <div class="outer">
                     <div class="image">
                         <a href="/poem?link=tseliot"><img class="apic" src="img/eliot_main_lg.jpg"</a>
+                        <span class="authorname"><h2>T.S. Eliot</h2></span>
                     </div>
 
                 
@@ -57,6 +67,7 @@
             <div class="outer">
                 <div class="image">
                     <a href="/poem?link=dante"><img class="apic" src="img/dante.jpg"</a>
+                    <h2><span>Dante</span></h2>
                 </div>
             </div>
 
@@ -147,8 +158,6 @@
 
 </div>
 </div>
-
-<div id="hidden"></div>
 
 
 <!-- In the callback, you would hide the gSignInWrapper element on a

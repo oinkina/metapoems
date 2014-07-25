@@ -1,5 +1,5 @@
 body {
-  background-image: url(/images/abstract-art-1.jpg);
+  /*background-image: url(/images/abstract-art-2.jpg);*/
   background-size: cover;
 }
 
@@ -7,7 +7,7 @@ body {
   font-family: garamond;
   src: url(/fonts/GaramondNo8-Regular.ttf);
   font-size:100%;
-  font-stretch:expanded;
+  font-stretch: expanded;
 }
 
 h3 {
@@ -17,7 +17,7 @@ h3 {
 .backdrop {
     background-color: #fff;
     opacity: .7;
-    width: 70%;
+    width: 40%;
     text-align: center;
     margin: auto;
     padding-bottom: 20px; 
