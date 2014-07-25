@@ -192,10 +192,12 @@ def markov(ngrams, lineLength, error, lines, n_probabilities=[0.5,0.5]):
     currentLineLength = 0
     if linesCount == lines:
       title = poem
-      poem -= len(title)
+      for i in range(-len(title)):
+        poem.pop(i)
     linesCount -= 1
 
-  return (title, poem) 
+  return (title, poem)
+
 
 # TODOs:
 # <s> </s> tags for reasonable starts and ends
@@ -224,7 +226,7 @@ def generatePoem(corpus, lineLength=5, error = 0, lines=20, weights=[0.1,0.7,0.2
 
 def main():
   corpus = 'corpus/poe.txt'
-  print generatePoem(corpus)
+  print generatePoem(corpus, 7, 3, 10)
 
 if __name__ == '__main__':
   main()
