@@ -180,7 +180,10 @@ def markov(ngrams, lineLength, error, lines, n_probabilities=[0.5,0.5]):
 
   # for each line
   while lines > 0:
-    thisLineLength = abs(lineLength + randrange(-1*error, error))
+    if error == 0:
+      thisLineLength = lineLength
+    else:
+      thisLineLength = abs(lineLength + randrange(-1*error, error))
     # for each word in line
     while currentLineLength < thisLineLength:
       n = sample(n_probabilities)+2 
