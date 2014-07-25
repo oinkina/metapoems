@@ -53,7 +53,7 @@ body {
     -moz-border-radius: 8px;
     -khtml-border-radius: 8px;  
     border-radius: 8px;
-    border:solid black 1px;
+    border:solid black 0px;
     overflow: hidden;
     padding: 1px;
     display: inline-block;
