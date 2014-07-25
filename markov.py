@@ -199,6 +199,9 @@ def markov(ngrams, lineLength, error, lines, n_probabilities=[0.5,0.5]):
     lines -= 1
     firstLine = False
 
+  for i in range(len(title)):
+    title[i] = title[i].capitalize()
+
   return (title, poem)
 
 
