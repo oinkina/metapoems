@@ -32,14 +32,15 @@ class PoemHandler(webapp2.RequestHandler):
       if y == f[:-4]:
         author = str(f)
 
-    ona = generatePoem("corpus/" + author, lineLength=7, error = 3, lines=10)
+    title, poem = generatePoem("corpus/" + author, lineLength=7, error = 3, lines=10)
     # try:
     #   ona = generatePoem("corpus/" + author)
     # except Exception as e:
     #   self.response.out.write(str(e))
 
     template_values = {
-      'poem' : ona,
+      'title' : title,
+      'poem' : poem,
       'author' : author
     }
 
