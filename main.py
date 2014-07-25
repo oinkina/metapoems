@@ -23,6 +23,9 @@ class MakePoemHandler(webapp2.RequestHandler):
 
 class PoemHandler(webapp2.RequestHandler):
   def get(self):
+    
+    lineLength = self.request.get('lineLength')
+    lines = self.request.get('lines')
 
     y = self.request.get("link")
     for f in os.listdir("corpus"):
