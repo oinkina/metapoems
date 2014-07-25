@@ -175,6 +175,8 @@ def markov(ngrams, lineLength, error, lines, n_probabilities=[0.5,0.5]):
   chain = firstWords(ngrams)
   currentLineLength = len(chain)
   poem = chain[:]
+  title = chain[:]
+  firstLine = True
 
   # for each line
   while lines > 0:
@@ -183,15 +185,22 @@ def markov(ngrams, lineLength, error, lines, n_probabilities=[0.5,0.5]):
     while currentLineLength < thisLineLength:
       n = sample(n_probabilities)+2 
       nextWord = sampleNgrams(n, chain, ngrams)
-      poem += nextWord
       chain += nextWord
+
+      if firstLine:
+        title += nextWord
+      else:
+        poem += nextWord
+
       currentLineLength += 1
 
     poem += [" <br> "]
     currentLineLength = 0
     lines -= 1
+    firstLine = False
 
-  return poem 
+  return (title, poem)
+
 
 # TODOs:
 # <s> </s> tags for reasonable starts and ends
@@ -212,9 +221,8 @@ def markov(ngrams, lineLength, error, lines, n_probabilities=[0.5,0.5]):
 def generatePoem(corpus, lineLength=5, error = 0, lines=20, weights=[0.1,0.7,0.2]):
   corp = wordsFromCorpus(corpus)
   ngrams = nestedDictToTuples(ngramsFromCorpus(corp, 4))
-  poem = markov(ngrams, lineLength, error, lines, weights)
-  return ' '.join(poem)
-
+  title, poem = markov(ngrams, lineLength, error, lines, weights)
+  return (' '.join(title), ' '.join(poem))
 
 
 
