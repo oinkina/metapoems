@@ -175,10 +175,11 @@ def markov(ngrams, lineLength, error, lines, n_probabilities=[0.5,0.5]):
   chain = firstWords(ngrams)
   currentLineLength = len(chain)
   poem = chain[:]
-  linesCount = lines
+  title = chain[:]
+  firstLine = True
 
   # for each line
-  while linesCount > 0:
+  while lines > 0:
     thisLineLength = abs(lineLength + randrange(-1*error, error))
     # for each word in line
     while currentLineLength < thisLineLength:
@@ -186,15 +187,16 @@ def markov(ngrams, lineLength, error, lines, n_probabilities=[0.5,0.5]):
       nextWord = sampleNgrams(n, chain, ngrams)
       poem += nextWord
       chain += nextWord
+
+      if firstLine:
+        title += nextWord
+
       currentLineLength += 1
 
     poem += [" <br> "]
     currentLineLength = 0
-    if linesCount == lines:
-      title = poem
-      for i in range(-len(title)):
-        poem.pop(i)
-    linesCount -= 1
+    lines -= 1
+    firstLine = False
 
   return (title, poem)
 

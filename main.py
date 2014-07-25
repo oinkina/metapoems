@@ -29,7 +29,7 @@ class PoemHandler(webapp2.RequestHandler):
       if y == f[:-4]:
         author = str(f)
 
-    title, poem = generatePoem("corpus/" + author, lineLength=7, error = 3, lines=10)
+    title, ona = generatePoem("corpus/" + author, lineLength=7, error = 3, lines=10)
     # try:
     #   ona = generatePoem("corpus/" + author)
     # except Exception as e:
