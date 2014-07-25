@@ -171,15 +171,16 @@ def firstWords(ngrams):
   firstStr = firstNgram[0] + " " + choice(firstNgram[1])[0] # :: "wordn-1 wordn"
   return firstStr.split(' ') # :: [wordn-1, wordn]
 
-def markov(ngrams, lineLength, lines, n_probabilities=[0.5,0.5]):
+def markov(ngrams, lineLength, error, lines, n_probabilities=[0.5,0.5]):
   chain = firstWords(ngrams)
   currentLineLength = len(chain)
   poem = chain[:]
 
   # for each line
   while lines > 0:
+    thisLineLength = abs(lineLength + randrange(-1*error, error))
     # for each word in line
-    while currentLineLength < lineLength:
+    while currentLineLength < thisLineLength:
       n = sample(n_probabilities)+2 
       nextWord = sampleNgrams(n, chain, ngrams)
       poem += nextWord
@@ -208,10 +209,10 @@ def markov(ngrams, lineLength, lines, n_probabilities=[0.5,0.5]):
 # rhyming
 
 
-def generatePoem(corpus):
+def generatePoem(corpus, lineLength=5, error = 0, lines=20, weights=[0.1,0.7,0.2]):
   corp = wordsFromCorpus(corpus)
   ngrams = nestedDictToTuples(ngramsFromCorpus(corp, 4))
-  poem = markov(ngrams, 5, 14, [0.1,0.7,0.2])
+  poem = markov(ngrams, lineLength, error, lines, weights)
   return ' '.join(poem)
 
 

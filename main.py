@@ -24,15 +24,12 @@ class MakePoemHandler(webapp2.RequestHandler):
 class PoemHandler(webapp2.RequestHandler):
   def get(self):
 
-    lineLength = self.request.get('lineLength')
-    lines = self.request.get('lines')
-
     y = self.request.get("link")
     for f in os.listdir("corpus"):
       if y == f[:-4]:
         author = str(f)
 
-    ona = generatePoem("corpus/" + author, lineLength=7, lines=20)
+    ona = generatePoem("corpus/" + author, lineLength=7, error = 3, lines=10)
     # try:
     #   ona = generatePoem("corpus/" + author)
     # except Exception as e:
@@ -62,7 +59,7 @@ routes = [
   #('/home', HomeHandler),
   ('/', MakePoemHandler),
   ('/poem', PoemHandler),
-  ('/newpoem', PoemHandler)
+  #('/newpoem', PoemHandler)
 ]
 
 app = webapp2.WSGIApplication(routes, debug=True)
