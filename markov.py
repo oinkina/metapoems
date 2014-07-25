@@ -192,6 +192,7 @@ def markov(ngrams, lineLength, error, lines, n_probabilities=[0.5,0.5]):
     currentLineLength = 0
     if linesCount == lines:
       title = poem
+      poem -= len(title)
     linesCount -= 1
 
   return (title, poem) 
