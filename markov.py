@@ -221,7 +221,7 @@ def generatePoem(corpus, lineLength=5, error = 0, lines=20, weights=[0.1,0.7,0.2
 
 def main():
   corpus = 'corpus/poe.txt'
-  print generatePoem(corpus)
+  print generatePoem(corpus, 7, 3, 10)
 
 if __name__ == '__main__':
   main()
