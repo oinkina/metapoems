@@ -261,12 +261,6 @@ A Cooking Egg
        Weeping, weeping multitudes
      Droop in a hundred A.B.C.'s
 
-     ["ABC's" signifes endemic teashops, found in all parts of
-     London. The initials signify "Aerated Bread Company,
-     Limited."--Project Gutenberg Editor's replacement of
-     original footnote]
-
-
 
 
 Le Directeur
@@ -549,8 +543,6 @@ Mr. Eliot's Sunday Morning Service
 
 
 Sweeney Among the Nightingales
-
-       [Greek text inserted here]
 
 
      Apeneck Sweeney spreads his knees
@@ -1346,13 +1338,9 @@ I. THE BURIAL OF THE DEAD
   "Has it begun to sprout? Will it bloom this year?
   "Or has the sudden frost disturbed its bed?
 
-  Line 42 Od'] Oed'-- Editor.
-
   "Oh keep the Dog far hence, that's friend to men,
   "Or with his nails he'll dig it up again!
   "You! hypocrite lecteur!-- mon semblable,-- mon frere!"
-
-
 
 
 II. A GAME OF CHESS
@@ -1473,9 +1461,6 @@ III. THE FIRE SERMON
   Or other testimony of summer nights. The nymphs are departed.
   And their friends, the loitering heirs of city directors;               
   Departed, have left no addresses.
-
-  Line 161 ALRIGHT. This spelling occurs also in
-  the Hogarth Press edition-- Editor.
 
   By the waters of Leman I sat down and wept . . .
   Sweet Thames, run softly till I end my song,
