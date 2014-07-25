@@ -29,4 +29,21 @@
         </div>
 
         <p class="poem"> {{ poem }} </p>
+
+        <form action="/newpoem">
+        <label>Number of lines:
+        <input type="text" name="lines">
+        </label>
+        <br>
+        <label>Words per line:
+        <input type="text" name="lineLength">
+        </label>
+        <label>+/-:
+        <input type="text" name="error">
+        </label>
+        <br>
+
+        <input type="hidden" name="link" value="{{ author }}">
+        <br>
+        <button type="submit">Generate a new poem!</button>
     </div>
