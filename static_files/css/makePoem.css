@@ -72,11 +72,11 @@ body {
 }
 
 .overlay {
-    position: absolute;
-    background-color: black;
+    background-color: white;
     color: black;
     width: 150px;
     height: 170px;
+    display: inline-block;
 }
 
 #authorimg {
