@@ -1,3 +1,8 @@
+body {
+    background-repeat: repeat-x;
+    background-color: #000;
+}
+
 #header {
     text-align: center;
     font-size: 80px;
